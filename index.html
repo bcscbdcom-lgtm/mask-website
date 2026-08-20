@@ -86,13 +86,15 @@
   <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-40 border-b border-slate-100 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
-        <!-- Logo -->
+        <!-- Logo (Updated: Pure MASK HAJJ GROUP) -->
         <a href="#" class="flex items-center gap-3">
           <div class="w-10 h-10 bg-gradient-to-tr from-brand-navy to-brand-teal rounded-xl flex items-center justify-center text-white text-lg shadow-md">
             <i class="fa-solid fa-kaaba"></i>
           </div>
           <div>
-            <div class="text-2xl font-black text-brand-navy tracking-tight flex items-center leading-none">
+            <div class="text-2xl font-black text-brand-navy tracking-tight flex items-center leading-none"
+                 data-en='MASK<span class="text-brand-teal ml-1">HAJJ GROUP</span>'
+                 data-bn='মাস্ক<span class="text-brand-teal ml-1">হজ গ্রুপ</span>'>
               MASK<span class="text-brand-teal ml-1">HAJJ GROUP</span>
             </div>
           </div>
@@ -111,6 +113,7 @@
 
         <!-- Right Controls -->
         <div class="flex items-center gap-3">
+          <!-- Dynamic Language Toggle Button -->
           <button id="langToggleBtn" onclick="toggleLanguage()" class="flex items-center gap-1.5 text-xs font-bold text-slate-700 bg-slate-100 hover:bg-emerald-50 hover:text-emerald-700 border border-slate-200 px-3.5 py-2 rounded-lg transition">
             <i class="fa-solid fa-globe"></i> বাংলা
           </button>
@@ -327,7 +330,7 @@
     </div>
   </section>
 
-  <!-- 7. Meet Your Guide Section (EXACT MATCH FOR guide.jpeg) -->
+  <!-- 7. Meet Your Guide Section -->
   <section class="py-20 bg-brand-navy text-white relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -336,7 +339,6 @@
         <div class="lg:col-span-5">
           <div class="rounded-3xl border-2 border-emerald-400/80 p-2 bg-slate-900/60 shadow-2xl overflow-hidden">
             <div class="rounded-2xl overflow-hidden bg-slate-800 text-center relative group">
-              <!-- Pointed strictly to guide.jpeg without wrong fallback -->
               <img src="guide.jpeg" alt="Maulana Khalilur Rahman" class="w-full h-96 object-cover object-top hover:scale-105 transition duration-500">
               <div class="p-4 bg-slate-900/95 border-t border-slate-700/80">
                 <h3 class="text-base font-bold text-white" data-en="Maulana Khalilur Rahman" data-bn="মাওলানা খলিলুর রহমান">Maulana Khalilur Rahman</h3>
@@ -866,8 +868,10 @@
           <div class="w-8 h-8 bg-brand-navy rounded-lg flex items-center justify-center text-white text-sm">
             <i class="fa-solid fa-kaaba"></i>
           </div>
-          <div class="text-lg font-black text-brand-navy">
-            MASK<span class="text-brand-teal ml-0.5">HAJJ</span>
+          <div class="text-lg font-black text-brand-navy"
+               data-en='MASK<span class="text-brand-teal ml-0.5">HAJJ GROUP</span>'
+               data-bn='মাস্ক<span class="text-brand-teal ml-0.5">হজ গ্রুপ</span>'>
+            MASK<span class="text-brand-teal ml-0.5">HAJJ GROUP</span>
           </div>
         </a>
         <p class="leading-relaxed mb-5 text-slate-500" data-en="Your trusted partner for Hajj & Umrah from Bangladesh to the Holy Cities." data-bn="বাংলাদেশ থেকে পবিত্র মক্কা-মদিনায় আপনার বিশ্বস্ত হজ ও ওমরাহ সহযোগী।">
@@ -977,7 +981,7 @@
       <button onclick="closeModal('loginModal')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700">
         <i class="fa-solid fa-xmark"></i>
       </button>
-      <h3 class="text-base font-bold text-slate-900 mb-1"><i class="fa-solid fa-lock text-emerald-600 mr-2"></i>অ্যাক্সেস প্যানেল</h3>
+      <h3 class="text-base font-bold text-slate-900 mb-1"><i class="fa-solid fa-lock text-emerald-600 mr-2"></i>লগইন প্যানেল</h3>
       <p class="text-xs text-slate-500 mb-4">পিন কোড দিন (admin123 বা staff123):</p>
       <input type="password" id="pinInput" placeholder="PIN Code" class="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-xs mb-4 focus:ring-2 focus:ring-emerald-500 outline-none">
       <button onclick="handleLogin()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-2.5 rounded-xl text-xs transition">লগইন</button>
@@ -994,7 +998,7 @@
     </div>
   </div>
 
-  <!-- JavaScript Logic -->
+  <!-- Interactive JavaScript Logic -->
   <script>
     let currentLanguage = 'en';
 
