@@ -105,14 +105,13 @@
           <a href="#about" class="hover:text-brand-teal transition" data-en="About" data-bn="পরিচিতি">About</a>
           <a href="#packages" class="hover:text-brand-teal transition" data-en="Hajj Packages" data-bn="হজ প্যাকেজসমূহ">Hajj Packages</a>
           <a href="#umrah" class="hover:text-brand-teal transition" data-en="Umrah Packages" data-bn="ওমরাহ প্যাকেজসমূহ">Umrah Packages</a>
-          <a href="#gallery" class="hover:text-brand-teal transition" data-en="Gallery" data-bn="গ্যালারি">Gallery</a>
+          <a href="#features" class="hover:text-brand-teal transition" data-en="Why Us" data-bn="আমাদের বৈশিষ্ট্য">Why Us</a>
           <a href="#blog" class="hover:text-brand-teal transition" data-en="Blog" data-bn="ব্লগ">Blog</a>
           <a href="#contact" class="hover:text-brand-teal transition" data-en="Contact" data-bn="যোগাযোগ">Contact</a>
         </div>
 
         <!-- Right Controls -->
         <div class="flex items-center gap-3">
-          <!-- Dynamic Language Toggle Button -->
           <button id="langToggleBtn" onclick="toggleLanguage()" class="flex items-center gap-1.5 text-xs font-bold text-slate-700 bg-slate-100 hover:bg-emerald-50 hover:text-emerald-700 border border-slate-200 px-3.5 py-2 rounded-lg transition">
             <i class="fa-solid fa-globe"></i> বাংলা
           </button>
@@ -132,7 +131,6 @@
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-        <!-- Left Text -->
         <div class="lg:col-span-7">
           <div class="inline-flex items-center gap-2 bg-slate-800/80 border border-slate-700/80 px-3.5 py-1.5 rounded-full text-xs font-semibold text-emerald-400 mb-6 backdrop-blur-sm"
                data-en="✦ Since 2015 • Dhaka, Bangladesh"
@@ -162,7 +160,6 @@
             </a>
           </div>
 
-          <!-- Hero Metrics -->
           <div class="grid grid-cols-3 gap-6 pt-6 border-t border-slate-800 max-w-lg">
             <div>
               <div class="text-2xl sm:text-3xl font-extrabold text-white">1200+</div>
@@ -179,14 +176,13 @@
           </div>
         </div>
 
-        <!-- Right Visual Card -->
         <div class="lg:col-span-5">
           <div class="bg-white rounded-3xl p-3 shadow-2xl border border-slate-700/40">
             <div class="relative rounded-2xl overflow-hidden bg-brand-navy p-8 text-white text-center">
               <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-500/20 border border-emerald-400/30 flex items-center justify-center text-emerald-400 text-2xl">
                 <i class="fa-solid fa-kaaba"></i>
               </div>
-              <p class="text-amber-300 font-semibold text-lg mb-1">"وَأَتِمُّوا الْحَجَّ وَالْعُمْরَةَ لِلَّهِ"</p>
+              <p class="text-amber-300 font-semibold text-lg mb-1">"وَأَتِمُّوا الْحَجَّ وَالْعُمْرَةَ لِلَّهِ"</p>
               <p class="text-xs text-slate-300 italic mb-6" data-en='"Complete the Hajj and Umrah sincerely for Allah alone"' data-bn='"এবং আল্লাহর সন্তুষ্টির উদ্দেশ্যে হজ ও ওমরাহ পূর্ণ করো"'>"Complete the Hajj and Umrah sincerely for Allah alone"</p>
               <div class="bg-slate-900/90 rounded-xl p-4 text-left border border-slate-800">
                 <div class="flex items-center gap-2 text-emerald-400 font-bold text-xs mb-1">
@@ -332,22 +328,26 @@
     </div>
   </section>
 
-  <!-- 7. Meet Your Guide Section -->
+  <!-- 7. Meet Your Guide Section (UPDATED WITH YOUR ATTACHED IMAGE) -->
   <section class="py-20 bg-brand-navy text-white relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Image Card -->
         <div class="lg:col-span-5">
-          <div class="rounded-3xl border-2 border-emerald-400/80 p-3 bg-slate-900/60 shadow-2xl">
-            <div class="rounded-2xl bg-slate-800 p-8 text-center">
-              <div class="w-24 h-24 mx-auto rounded-full bg-emerald-500/20 border-2 border-emerald-400 flex items-center justify-center text-4xl text-emerald-400 mb-4">
-                <i class="fa-solid fa-user-tie"></i>
+          <div class="rounded-3xl border-2 border-emerald-400/80 p-2 bg-slate-900/60 shadow-2xl overflow-hidden">
+            <div class="rounded-2xl overflow-hidden bg-slate-800 text-center relative group">
+              <!-- Actual image loaded from repo (guide.jpg) -->
+              <img src="guide.jpg" alt="Religious Guide" class="w-full h-96 object-cover object-top hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80';">
+              <div class="p-4 bg-slate-900/95 border-t border-slate-700/80">
+                <h3 class="text-base font-bold text-white" data-en="Maulana Khalilur Rahman" data-bn="মাওলানা খলিলুর রহমান">Maulana Khalilur Rahman</h3>
+                <p class="text-xs text-emerald-400 font-semibold mt-0.5" data-en="Lead Hajj & Umrah Mentor" data-bn="প্রধান ধর্মীয় উপদেষ্টা ও পরিচালক">Lead Hajj & Umrah Mentor</p>
               </div>
-              <h3 class="text-lg font-bold text-white" data-en="Dr. Mohammad Imam Hossain" data-bn="ড. মুহাম্মাদ ইমাম হোসেন">Dr. Mohammad Imam Hossain</h3>
-              <p class="text-xs text-emerald-400 font-semibold mt-1" data-en="Lead Hajj Guide • Ph.D, Islamic University" data-bn="প্রধান ধর্মীয় উপদেষ্টা • পিএইচডি, ইসলামিক বিশ্ববিদ্যালয়">Lead Hajj Guide • Ph.D, Islamic University</p>
             </div>
           </div>
         </div>
 
+        <!-- Right Content -->
         <div class="lg:col-span-7">
           <span class="text-emerald-400 font-bold uppercase tracking-wider text-xs" data-en="MEET YOUR GUIDE" data-bn="আমাদের আলেম মেন্টরগণ">MEET YOUR GUIDE</span>
           <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-6" data-en="Spiritual guidance from trusted scholars and mentors." data-bn="বিজ্ঞ ও প্রখ্যাত আলেমদের সরাসরি তত্ত্বাবধানে পবিত্র সফর।">
@@ -362,13 +362,13 @@
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             <div class="bg-slate-800/80 border border-slate-700/80 p-4 rounded-xl">
               <i class="fa-solid fa-graduation-cap text-emerald-400 text-lg mb-2"></i>
-              <div class="text-xs font-bold text-white" data-en="Ph.D Scholars" data-bn="উচ্চশিক্ষিত আলেম">Ph.D Scholars</div>
-              <div class="text-[10px] text-slate-400 mt-1" data-en="Certified Islamic scholars" data-bn="প্রখ্যাত বিশ্ববিদ্যালয়ের ডিগ্রিধারী">Certified Islamic scholars</div>
+              <div class="text-xs font-bold text-white" data-en="Islamic Scholars" data-bn="বিজ্ঞ আলেম">Islamic Scholars</div>
+              <div class="text-[10px] text-slate-400 mt-1" data-en="Certified Islamic mentor" data-bn="শরিয়া অনুযায়ী সার্বক্ষণিক দিকনির্দেশনা">Certified Islamic mentor</div>
             </div>
             <div class="bg-slate-800/80 border border-slate-700/80 p-4 rounded-xl">
               <i class="fa-solid fa-language text-emerald-400 text-lg mb-2"></i>
               <div class="text-xs font-bold text-white" data-en="Multilingual" data-bn="বহুভাষিক সেবা">Multilingual</div>
-              <div class="text-[10px] text-slate-400 mt-1" data-en="Bangla, Urdu, English, Arabic" data-bn="বাংলা, আরবি, উর্দু ও ইংরেজি">Bangla, Urdu, English, Arabic</div>
+              <div class="text-[10px] text-slate-400 mt-1" data-en="Bangla, Arabic, Urdu" data-bn="বাংলা, আরবি ও উর্দু">Bangla, Arabic, Urdu</div>
             </div>
             <div class="bg-slate-800/80 border border-slate-700/80 p-4 rounded-xl">
               <i class="fa-solid fa-users text-emerald-400 text-lg mb-2"></i>
@@ -377,10 +377,11 @@
             </div>
           </div>
 
-          <button class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs px-6 py-3 rounded-xl transition" data-en="Meet All Guides" data-bn="সকল গাইডদের পরিচিতি">
+          <button onclick="openPreRegModal()" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs px-6 py-3 rounded-xl transition" data-en="Meet All Guides" data-bn="পরামর্শের জন্য যোগাযোগ করুন">
             Meet All Guides
           </button>
         </div>
+
       </div>
     </div>
   </section>
@@ -621,7 +622,6 @@
   <section class="py-20 bg-slate-50/60 border-t border-slate-200/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- Reviews Title -->
       <div class="text-center max-w-2xl mx-auto mb-14">
         <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" data-en="Reviews" data-bn="হাজীদের মতামত">Reviews</span>
         <h2 class="text-3xl font-extrabold text-slate-900 mt-2" data-en="What our pilgrims say" data-bn="আমাদের সম্মানিত হাজীদের অভিজ্ঞতা">What our pilgrims say</h2>
@@ -630,7 +630,6 @@
         </div>
       </div>
 
-      <!-- Testimonial Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
         <div class="bg-white p-6 rounded-3xl border border-slate-100 soft-shadow">
           <i class="fa-solid fa-quote-left text-emerald-500 text-xl mb-3"></i>
@@ -665,7 +664,6 @@
         </div>
       </div>
 
-      <!-- Consultation Box -->
       <div class="bg-white rounded-3xl border border-slate-200/80 soft-shadow overflow-hidden grid grid-cols-1 lg:grid-cols-12">
         <div class="lg:col-span-5 bg-gradient-to-br from-brand-navy to-[#07192d] p-8 sm:p-10 text-white flex flex-col justify-between">
           <div>
@@ -741,62 +739,7 @@
     </div>
   </section>
 
-  <!-- 12. FAQ Section -->
-  <section id="faq" class="py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="text-center mb-12">
-      <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" data-en="FAQ" data-bn="প্রশ্নোত্তর">FAQ</span>
-      <h2 class="text-3xl font-extrabold text-slate-900 mt-2" data-en="Common questions, answered" data-bn="সাধারণ জিজ্ঞাসা ও উত্তরসমূহ">Common questions, answered</h2>
-    </div>
-
-    <div class="space-y-4">
-      <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden soft-shadow">
-        <button onclick="toggleFaq('faq1')" class="w-full text-left p-5 flex justify-between items-center font-bold text-slate-800 text-sm">
-          <span data-en="What's included in the Hajj package?" data-bn="হজ প্যাকেজে কী কী সেবা অন্তর্ভুক্ত থাকে?">What's included in the Hajj package?</span>
-          <i id="faqIcon-faq1" class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
-        </button>
-        <div id="faq1" class="hidden p-5 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-50"
-             data-en="All packages include return airfare, hotel accommodations in Makkah and Madinah, three daily meals, Mina & Arafat tents, local transport, visa processing, guides, luggage and pre-departure orientation."
-             data-bn="সকল প্যাকেজে বিমান টিকিট, মক্কা ও মদিনার আবাসন, ৩ বেলা খাবার, মিনা-আরাফার তাবু, পরিবহন, ভিসা প্রসেসিং, গাইড বই, ট্রাভেল লাগেজ ও হজপূর্ব প্রশিক্ষণ অন্তর্ভুক্ত।">
-          All packages include return airfare, hotel accommodations in Makkah and Madinah, three daily meals, Mina & Arafat tents, local transport, visa processing, guides, luggage and pre-departure orientation.
-        </div>
-      </div>
-      <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden soft-shadow">
-        <button onclick="toggleFaq('faq2')" class="w-full text-left p-5 flex justify-between items-center font-bold text-slate-800 text-sm">
-          <span data-en="How early should I book?" data-bn="কত আগে প্রাক-নিবন্ধন করা প্রয়োজন?">How early should I book?</span>
-          <i id="faqIcon-faq2" class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
-        </button>
-        <div id="faq2" class="hidden p-5 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-50"
-             data-en="Due to government quotas and limited airline allocations, we recommend pre-registering as early as possible to secure your desired package tier."
-             data-bn="সরকারি কোটা ও সময়সীমার কারণে দ্রুততম সময়ে প্রাক-নিবন্ধন সম্পন্ন করে আপনার কাঙ্ক্ষিত প্যাকেজ নিশ্চিত করার পরামর্শ দেওয়া হয়।">
-          Due to government quotas and limited airline allocations, we recommend pre-registering as early as possible to secure your desired package tier.
-        </div>
-      </div>
-      <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden soft-shadow">
-        <button onclick="toggleFaq('faq3')" class="w-full text-left p-5 flex justify-between items-center font-bold text-slate-800 text-sm">
-          <span data-en="Is pre-departure training included?" data-bn="হজ প্রশিক্ষণ কি সম্পূর্ণ ফ্রি?">Is pre-departure training included?</span>
-          <i id="faqIcon-faq3" class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
-        </button>
-        <div id="faq3" class="hidden p-5 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-50"
-             data-en="Yes, comprehensive day-long training sessions led by our scholars, along with guide books and digital videos, are fully complimentary for all registered pilgrims."
-             data-bn="হ্যাঁ, বিজ্ঞ আলেমদের মাধ্যমে আয়োজিত বিশেষ প্রশিক্ষণ কর্মশালা এবং প্রয়োজনীয় গাইড বই সকল নিবন্ধিত হাজির জন্য সম্পূর্ণ বিনামূল্যে প্রদান করা হয়।">
-          Yes, comprehensive day-long training sessions led by our scholars, along with guide books and digital videos, are fully complimentary for all registered pilgrims.
-        </div>
-      </div>
-      <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden soft-shadow">
-        <button onclick="toggleFaq('faq4')" class="w-full text-left p-5 flex justify-between items-center font-bold text-slate-800 text-sm">
-          <span data-en="Can I customize my package?" data-bn="প্যাকেজ কাস্টমাইজ বা পরিবর্তন করা যাবে কি?">Can I customize my package?</span>
-          <i id="faqIcon-faq4" class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
-        </button>
-        <div id="faq4" class="hidden p-5 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-50"
-             data-en="Yes, custom 2-bed/3-bed and private VIP arrangements can be tailored upon direct discussion with our advisors."
-             data-bn="অবশ্যই! পরিবার বা বিশেষ চাহিদার ক্ষেত্রে ২-বেড/৩-বেড কিংবা ভিআইপি প্রাইভেট প্যাকেজ আলোচনা সাপেক্ষে তৈরি করা যায়।">
-          Yes, custom 2-bed/3-bed and private VIP arrangements can be tailored upon direct discussion with our advisors.
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 13. Blog Section -->
+  <!-- 12. Blog Section -->
   <section id="blog" class="py-20 bg-slate-50/60 border-t border-slate-200/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 gap-4">
@@ -874,7 +817,7 @@
     </div>
   </section>
 
-  <!-- 14. Pre-Footer Callout & Map Section -->
+  <!-- 13. Pre-Footer Callout & Map Section -->
   <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
       <div class="lg:col-span-6 cta-gradient-box rounded-3xl p-8 sm:p-12 text-white flex flex-col justify-between shadow-xl">
@@ -916,7 +859,7 @@
     </div>
   </section>
 
-  <!-- 15. Complete 4-Column Clean Footer -->
+  <!-- 14. Complete 4-Column Clean Footer -->
   <footer id="contact" class="bg-white pt-16 pb-12 border-t border-slate-200/70 text-xs text-slate-500">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
       <div>
@@ -944,7 +887,7 @@
           <li><a href="#about" class="hover:text-emerald-600 transition" data-en="About Us" data-bn="আমাদের পরিচিতি">About Us</a></li>
           <li><a href="#packages" class="hover:text-emerald-600 transition" data-en="Hajj Packages" data-bn="হজ প্যাকেজসমূহ">Hajj Packages</a></li>
           <li><a href="#umrah" class="hover:text-emerald-600 transition" data-en="Umrah Packages" data-bn="ওমরাহ প্যাকেজসমূহ">Umrah Packages</a></li>
-          <li><a href="#gallery" class="hover:text-emerald-600 transition" data-en="Gallery" data-bn="গ্যালারি">Gallery</a></li>
+          <li><a href="#features" class="hover:text-emerald-600 transition" data-en="Why Us" data-bn="আমাদের বৈশিষ্ট্য">Why Us</a></li>
           <li><a href="#blog" class="hover:text-emerald-600 transition" data-en="Blog" data-bn="ব্লগ">Blog</a></li>
           <li><a href="#contact" class="hover:text-emerald-600 transition" data-en="Contact" data-bn="যোগাযোগ">Contact</a></li>
         </ul>
@@ -1035,7 +978,7 @@
       <button onclick="closeModal('loginModal')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700">
         <i class="fa-solid fa-xmark"></i>
       </button>
-      <h3 class="text-base font-bold text-slate-900 mb-1"><i class="fa-solid fa-lock text-emerald-600 mr-2"></i>লগইন প্যানেল</h3>
+      <h3 class="text-base font-bold text-slate-900 mb-1"><i class="fa-solid fa-lock text-emerald-600 mr-2"></i>অ্যাক্সেস প্যানেল</h3>
       <p class="text-xs text-slate-500 mb-4">পিন কোড দিন (admin123 বা staff123):</p>
       <input type="password" id="pinInput" placeholder="PIN Code" class="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-xs mb-4 focus:ring-2 focus:ring-emerald-500 outline-none">
       <button onclick="handleLogin()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-2.5 rounded-xl text-xs transition">লগইন</button>
@@ -1052,14 +995,13 @@
     </div>
   </div>
 
-  <!-- Interactive JavaScript Logic -->
+  <!-- JavaScript Logic -->
   <script>
     let currentLanguage = 'en';
 
     function toggleLanguage() {
       currentLanguage = currentLanguage === 'en' ? 'bn' : 'en';
       
-      // Update text nodes
       document.querySelectorAll('[data-en]').forEach(el => {
         const text = el.getAttribute(`data-${currentLanguage}`);
         if (text) {
@@ -1067,7 +1009,6 @@
         }
       });
 
-      // Update placeholders
       document.querySelectorAll('[data-en-ph]').forEach(el => {
         const ph = el.getAttribute(`data-${currentLanguage}-ph`);
         if (ph) {
@@ -1075,7 +1016,6 @@
         }
       });
 
-      // Update toggle button text
       const btn = document.getElementById('langToggleBtn');
       if (btn) {
         btn.innerHTML = currentLanguage === 'en' 
@@ -1086,7 +1026,6 @@
       localStorage.setItem('mask_lang', currentLanguage);
     }
 
-    // Auto-load preferred language
     document.addEventListener('DOMContentLoaded', () => {
       const savedLang = localStorage.getItem('mask_lang');
       if (savedLang && savedLang !== currentLanguage) {
@@ -1110,18 +1049,6 @@
     function closeModal(id) {
       document.getElementById(id).classList.add('hidden');
       document.getElementById(id).classList.remove('flex');
-    }
-
-    function toggleFaq(id) {
-      const el = document.getElementById(id);
-      const icon = document.getElementById('faqIcon-' + id);
-      if (el.classList.contains('hidden')) {
-        el.classList.remove('hidden');
-        icon.classList.add('rotate-180');
-      } else {
-        el.classList.add('hidden');
-        icon.classList.remove('rotate-180');
-      }
     }
 
     function handleLogin() {
