@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MASK Hajj Group - পবিত্র সফরের বিশ্বস্ত সঙ্গী</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts: Hind Siliguri -->
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Hind Siliguri', sans-serif; }
+    .gold-gradient { background: linear-gradient(135deg, #d97706 0%, #b45309 100%); }
+    .navy-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-amber-600 text-white text-sm py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-center gap-2">
+      <p id="topNoticeText" class="font-medium">
+        <i class="fa-solid fa-bullhorn mr-2"></i> <span id="displayNotice">নিবন্ধন চলছে! জাতীয় পরিচয়পত্র, পাসপোর্ট ও নিবন্ধন ফি ৩০,০০০/- (নিবন্ধনের শেষ তারিখ: ২৬ সেপ্টেম্বর)</span>
+      </p>
+      <div class="flex items-center gap-4 text-xs font-semibold">
+        <a href="tel:+8801711258708" class="hover:underline"><i class="fa-solid fa-phone mr-1"></i> +88 01711-258708</a>
+        <span>|</span>
+        <button onclick="openLoginModal()" class="bg-amber-800 hover:bg-amber-900 px-3 py-1 rounded text-white transition"><i class="fa-solid fa-lock mr-1"></i> লগইন প্যানেল</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="bg-slate-900 text-white sticky top-0 z-40 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-slate-950 text-2xl font-bold">
+            <i class="fa-solid fa-kaaba"></i>
+          </div>
+          <div>
+            <span class="text-2xl font-bold text-amber-400 tracking-wide block leading-none">মাস্ক হজ গ্রুপ</span>
+            <span class="text-xs text-slate-300 font-light tracking-wider">MASK HAJJ GROUP • Dhaka</span>
+          </div>
+        </div>
+        <!-- Menu Items -->
+        <div class="hidden md:flex space-x-6 text-sm font-medium">
+          <a href="#home" class="hover:text-amber-400 transition">হোম</a>
+          <a href="#packages" class="hover:text-amber-400 transition">হজ প্যাকেজসমূহ</a>
+          <a href="#umrah" class="hover:text-amber-400 transition">ওমরাহ সার্ভিস</a>
+          <a href="#features" class="hover:text-amber-400 transition">আমাদের বৈশিষ্ট্য</a>
+          <a href="#contact" class="hover:text-amber-400 transition">যোগাযোগ</a>
+        </div>
+        <!-- WhatsApp Action Button -->
+        <div class="hidden md:block">
+          <a href="https://wa.me/8801711258708" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-lg font-medium shadow flex items-center gap-2 transition">
+            <i class="fa-brands fa-whatsapp text-lg"></i> হোয়াটসঅ্যাপে তথ্য নিন
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="relative navy-gradient text-white py-20 px-4">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div>
+        <span class="inline-block bg-amber-500/20 text-amber-300 border border-amber-500/40 px-3 py-1 rounded-full text-sm font-medium mb-4">
+          পবিত্র সফরের বিশ্বস্ত সঙ্গী
+        </span>
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight mb-4">
+          আস্থা ও সুন্নাহর আলোকে আপনার <span class="text-amber-400">পবিত্র হজ ও ওমরাহ</span> সফর
+        </h1>
+        <p class="text-slate-300 text-lg mb-8">
+          সার্বক্ষণিক অভিজ্ঞ আলেম ও মুয়াল্লিমের সরাসরি তত্ত্বাবধানে নিশ্চিত ও আরামদায়ক আবাসন ব্যবস্থা।
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#packages" class="gold-gradient text-white px-6 py-3 rounded-lg font-bold shadow-lg hover:opacity-90 transition">
+            প্যাকেজসমূহ দেখুন
+          </a>
+          <a href="#contact" class="bg-slate-800 border border-slate-700 hover:bg-slate-700 text-white px-6 py-3 rounded-lg font-bold transition">
+            সরাসরি যোগাযোগ
+          </a>
+        </div>
+      </div>
+      <div class="bg-slate-800/60 p-6 rounded-2xl border border-slate-700 shadow-2xl backdrop-blur-sm">
+        <h3 class="text-xl font-bold text-amber-400 mb-4 flex items-center gap-2">
+          <i class="fa-solid fa-certificate"></i> প্যাকেজের বিশেষ আকর্ষণ ও গিফটসমূহ
+        </h3>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-200">
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> হজ ও ওমরাহ গাইড বই</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> উন্নতমানের ট্রাভেল লাগেজ</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> প্রিমিয়াম এহরামের কাপড়</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> তাওয়াফ তসবিহ ও ছাতা</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> কাঁধের ও পাসপোর্ট ব্যাগ</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> বিশেষ হিজাব ও স্যান্ডেল</li>
+        </ul>
+        <div class="mt-6 p-4 bg-amber-500/10 border border-amber-500/30 rounded-lg">
+          <p class="text-xs text-amber-300 font-medium">
+            * এছাড়াও আলোচনা সাপেক্ষে কাস্টমাইজড ভিআইপি ও ফ্যামিলি প্যাকেজ তৈরি করা হয়।
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Notice & Circular Banner -->
+  <section class="max-w-7xl mx-auto px-4 -mt-8 relative z-20">
+    <div id="noticeBox" class="bg-white rounded-xl shadow-xl p-6 border-l-8 border-amber-500 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center text-xl shrink-0">
+          <i class="fa-solid fa-bell"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-slate-900 text-lg">জরুরি নোটিশ বোর্ড</h4>
+          <p id="liveNoticeContent" class="text-slate-600 text-sm">
+            নিবন্ধন চলছে! জাতীয় পরিচয়পত্র, পাসপোর্ট ও নিবন্ধন ফি ৩০,০০০/- জমা দিয়ে এখনই আপনার বুকিং নিশ্চিত করুন। (নিবন্ধনের শেষ তারিখ: ২৬ সেপ্টেম্বর)
+          </p>
+        </div>
+      </div>
+      <a href="#contact" class="shrink-0 bg-slate-900 hover:bg-slate-800 text-amber-400 font-semibold px-5 py-2.5 rounded-lg text-sm transition">
+        বুকিং আবেদন করুন
+      </a>
+    </div>
+  </section>
+
+  <!-- Hajj Packages Section -->
+  <section id="packages" class="py-20 max-w-7xl mx-auto px-4">
+    <div class="text-center max-w-3xl mx-auto mb-14">
+      <span class="text-amber-600 font-bold uppercase tracking-wider text-sm">হজ প্যাকেজসমূহ</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">আপনার প্রয়োজন অনুযায়ী সেরা প্যাকেজ নির্বাচন করুন</h2>
+      <p class="text-slate-600 mt-3">সৌদি এয়ারলাইন্স, বাংলাদেশ বিমান ও ফ্লাইনাস ফ্লাইটে আরামদায়ক সফর</p>
+    </div>
+
+    <!-- Package Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="packageContainer">
+      
+      <!-- Card 1: সাশ্রয়ী ফুল প্যাকেজ -->
+      <div class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden hover:shadow-xl transition flex flex-col">
+        <div class="bg-slate-900 text-white p-6 text-center">
+          <h3 class="text-xl font-bold">সাশ্রয়ী ফুল প্যাকেজ</h3>
+          <p class="text-amber-400 text-3xl font-extrabold mt-2">৫,১৩,৬৪৮ ৳</p>
+          <span class="text-xs text-slate-300">মেয়াদ: ৩৫-৪০ দিন</span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <ul class="space-y-3 text-sm text-slate-600 mb-6">
+            <li><i class="fa-solid fa-hotel text-amber-600 mr-2"></i> <strong>হোটেল:</strong> মক্কা ও মদিনা ১০০০-৩০০০ মি.</li>
+            <li><i class="fa-solid fa-utensils text-amber-600 mr-2"></i> <strong>খাবার:</strong> ৩ বেলা দেশীয় খাবারের ব্যবস্থা</li>
+            <li><i class="fa-solid fa-plane text-amber-600 mr-2"></i> <strong>ফ্লাইট:</strong> সৌদি এয়ার/বিমান/ফ্লাইনাস</li>
+            <li><i class="fa-solid fa-hand-holding-dollar text-amber-600 mr-2"></i> <strong>নিবন্ধন ফি:</strong> ৩০,০০০/- টাকা</li>
+          </ul>
+          <a href="https://wa.me/8801711258708?text=I am interested in সাশ্রয়ী ফুল প্যাকেজ" target="_blank" class="w-full text-center bg-slate-100 hover:bg-amber-600 hover:text-white text-slate-800 font-bold py-2.5 rounded-lg transition">প্যাকেজ বিস্তারিত</a>
+        </div>
+      </div>
+
+      <!-- Card 2: ইকোনমি প্যাকেজ -->
+      <div class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden hover:shadow-xl transition flex flex-col">
+        <div class="bg-slate-900 text-white p-6 text-center">
+          <h3 class="text-xl font-bold">ইকোনমি প্যাকেজ</h3>
+          <p class="text-amber-400 text-3xl font-extrabold mt-2">৫,৪০,০০০ ৳</p>
+          <span class="text-xs text-slate-300">মেয়াদ: ৩৫-৪০ দিন</span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <ul class="space-y-3 text-sm text-slate-600 mb-6">
+            <li><i class="fa-solid fa-hotel text-amber-600 mr-2"></i> <strong>হোটেল:</strong> মক্কা ও মদিনা ৭০০-৯০০ মি.</li>
+            <li><i class="fa-solid fa-users text-amber-600 mr-2"></i> <strong>রুম:</strong> প্রতি রুমে ৫-৬ জন</li>
+            <li><i class="fa-solid fa-tent text-amber-600 mr-2"></i> <strong>তাবু:</strong> সি ক্যাটাগরি (মিনার পাশে ৬/৭ দিন)</li>
+            <li><i class="fa-solid fa-check-circle text-amber-600 mr-2"></i> <strong>কুরবানী:</strong> প্যাকেজে অন্তর্ভুক্ত</li>
+          </ul>
+          <a href="https://wa.me/8801711258708?text=I am interested in ইকোনমি প্যাকেজ" target="_blank" class="w-full text-center bg-slate-100 hover:bg-amber-600 hover:text-white text-slate-800 font-bold py-2.5 rounded-lg transition">প্যাকেজ বিস্তারিত</a>
+        </div>
+      </div>
+
+      <!-- Card 3: স্ট্যান্ডার্ড প্যাকেজ -->
+      <div class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden hover:shadow-xl transition flex flex-col">
+        <div class="bg-slate-900 text-white p-6 text-center">
+          <h3 class="text-xl font-bold">স্ট্যান্ডার্ড প্যাকেজ</h3>
+          <p class="text-amber-400 text-3xl font-extrabold mt-2">৬,৪০,০০০ ৳</p>
+          <span class="text-xs text-slate-300">মেয়াদ: ৩৫-৪০ দিন</span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <ul class="space-y-3 text-sm text-slate-600 mb-6">
+            <li><i class="fa-solid fa-hotel text-amber-600 mr-2"></i> <strong>হোটেল:</strong> হারাম শরীফের ৮০০ মিটারের মধ্যে</li>
+            <li><i class="fa-solid fa-users text-amber-600 mr-2"></i> <strong>রুম:</strong> প্রতি রুমে ৫-৬ জন</li>
+            <li><i class="fa-solid fa-tent text-amber-600 mr-2"></i> <strong>তাবু:</strong> সি ক্যাটাগরি আবাসন</li>
+            <li><i class="fa-solid fa-check-circle text-amber-600 mr-2"></i> <strong>কুরবানী:</strong> প্যাকেজে অন্তর্ভুক্ত</li>
+          </ul>
+          <a href="https://wa.me/8801711258708?text=I am interested in স্ট্যান্ডার্ড প্যাকেজ" target="_blank" class="w-full text-center bg-slate-100 hover:bg-amber-600 hover:text-white text-slate-800 font-bold py-2.5 rounded-lg transition">প্যাকেজ বিস্তারিত</a>
+        </div>
+      </div>
+
+      <!-- Card 4: প্রিমিয়াম প্যাকেজ -->
+      <div class="bg-white rounded-2xl shadow-lg border-2 border-amber-500 overflow-hidden hover:shadow-2xl transition flex flex-col relative">
+        <span class="absolute top-3 right-3 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full">জনপ্রিয়</span>
+        <div class="bg-slate-900 text-white p-6 text-center">
+          <h3 class="text-xl font-bold">প্রিমিয়াম প্যাকেজ</h3>
+          <p class="text-amber-400 text-3xl font-extrabold mt-2">৭,৫০,০০০ ৳</p>
+          <span class="text-xs text-slate-300">মেয়াদ: ৩৫-৪০ দিন</span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <ul class="space-y-3 text-sm text-slate-600 mb-6">
+            <li><i class="fa-solid fa-star text-amber-500 mr-2"></i> <strong>হোটেল:</strong> ১০০-৩০০ মিটারের মধ্যে ৩ স্টার মান</li>
+            <li><i class="fa-solid fa-utensils text-amber-600 mr-2"></i> <strong>খাবার:</strong> বুফে ব্রেকফাস্টসহ ৩ বেলা খাবার</li>
+            <li><i class="fa-solid fa-map-location-dot text-amber-600 mr-2"></i> <strong>জিয়ারাহ:</strong> তায়েফ, বদর ও জিন পাহাড়</li>
+            <li><i class="fa-solid fa-tent text-amber-600 mr-2"></i> <strong>মিনার পাশে:</strong> ৭/৮ দিন উন্নত আবাসন</li>
+          </ul>
+          <a href="https://wa.me/8801711258708?text=I am interested in প্রিমিয়াম প্যাকেজ" target="_blank" class="w-full text-center gold-gradient text-white font-bold py-2.5 rounded-lg shadow hover:opacity-95 transition">প্যাকেজ বিস্তারিত</a>
+        </div>
+      </div>
+
+      <!-- Card 5: ভি. আই. পি প্যাকেজ -->
+      <div class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden hover:shadow-xl transition flex flex-col">
+        <div class="bg-slate-900 text-white p-6 text-center">
+          <h3 class="text-xl font-bold">ভি. আই. পি প্যাকেজ</h3>
+          <p class="text-amber-400 text-3xl font-extrabold mt-2">৯,৯৫,০০০ ৳</p>
+          <span class="text-xs text-slate-300">মেয়াদ: ১৬-২০ দিন (শর্ট প্যাকেজ)</span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <ul class="space-y-3 text-sm text-slate-600 mb-6">
+            <li><i class="fa-solid fa-building text-amber-600 mr-2"></i> <strong>মক্কা:</strong> ৫ স্টার (ক্লক টাওয়ার / হিলটন / সাফা)</li>
+            <li><i class="fa-solid fa-hotel text-amber-600 mr-2"></i> <strong>মদিনা:</strong> ৪ স্টার (৫০ মিটারের মধ্যে)</li>
+            <li><i class="fa-solid fa-train text-amber-600 mr-2"></i> <strong>যাতায়াত:</strong> হারামাইন বুলেট ট্রেন সার্ভিস</li>
+            <li><i class="fa-solid fa-tent text-amber-600 mr-2"></i> <strong>তাবু:</strong> মিনা-আরাফায় ভি আই পি তাবু</li>
+          </ul>
+          <a href="https://wa.me/8801711258708?text=I am interested in ভি আই পি প্যাকেজ" target="_blank" class="w-full text-center bg-slate-100 hover:bg-amber-600 hover:text-white text-slate-800 font-bold py-2.5 rounded-lg transition">প্যাকেজ বিস্তারিত</a>
+        </div>
+      </div>
+
+      <!-- Card 6: ভি. ভি. আই. পি প্যাকেজ -->
+      <div class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden hover:shadow-xl transition flex flex-col">
+        <div class="bg-slate-900 text-white p-6 text-center">
+          <h3 class="text-xl font-bold">ভি. ভি. আই. পি প্যাকেজ</h3>
+          <p class="text-amber-400 text-3xl font-extrabold mt-2">১৯,৫০,০০০ ৳</p>
+          <span class="text-xs text-slate-300">মেয়াদ: ১৪-১৮ দিন (এক্সক্লুসিভ)</span>
+        </div>
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <ul class="space-y-3 text-sm text-slate-600 mb-6">
+            <li><i class="fa-solid fa-crown text-amber-500 mr-2"></i> <strong>মক্কা ও মদিনা:</strong> উভয় স্থানে পূর্ণ ৫ স্টার লাক্সারি</li>
+            <li><i class="fa-solid fa-utensils text-amber-600 mr-2"></i> <strong>খাবার:</strong> ফাইভ স্টার বুফে ক্যাটারিং</li>
+            <li><i class="fa-solid fa-train text-amber-600 mr-2"></i> <strong>ট্রান্সপোর্ট:</strong> এক্সপ্রেস বুলেট ট্রেন ও প্রাইভেট কার</li>
+            <li><i class="fa-solid fa-users text-amber-600 mr-2"></i> <strong>রুম:</strong> ৪ জন (২/৩ বেড অপশন রয়েছে)</li>
+          </ul>
+          <a href="https://wa.me/8801711258708?text=I am interested in ভি ভি আই পি প্যাকেজ" target="_blank" class="w-full text-center bg-slate-100 hover:bg-amber-600 hover:text-white text-slate-800 font-bold py-2.5 rounded-lg transition">প্যাকেজ বিস্তারিত</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Umrah Section -->
+  <section id="umrah" class="bg-slate-100 py-16 px-4">
+    <div class="max-w-7xl mx-auto bg-slate-900 rounded-3xl p-8 md:p-12 text-white flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
+      <div class="max-w-2xl">
+        <span class="bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">সারাবছর চালু</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold mt-3">আমাদের রয়েছে প্রতি সপ্তাহে সাশ্রয়ী মূল্যে ওমরাহ প্যাকেজ</h2>
+        <p class="text-slate-300 mt-4 leading-relaxed">
+          ভিসা প্রসেসিং, সরাসরি রিটার্ন এয়ার টিকিট, হারাম শরীফের কাছে মানসম্মত হোটেল ও অভিজ্ঞ গাইডসহ সম্পূর্ণ পারিবারিক ও গ্রুপ ওমরাহ কাফেলা।
+        </p>
+      </div>
+      <a href="https://wa.me/8801711258708?text=আমি ওমরাহ প্যাকেজ সম্পর্কে জানতে আগ্রহী" target="_blank" class="shrink-0 gold-gradient text-white font-bold px-8 py-4 rounded-xl shadow-lg hover:opacity-90 transition">
+        ওমরাহ বুকিং দিন
+      </a>
+    </div>
+  </section>
+
+  <!-- Features & Core Strengths -->
+  <section id="features" class="py-20 max-w-7xl mx-auto px-4">
+    <div class="text-center max-w-2xl mx-auto mb-12">
+      <h2 class="text-3xl font-extrabold text-slate-900">আমাদের বিশেষ বৈশিষ্ট্যসমূহ</h2>
+      <p class="text-slate-600 mt-2">কেন আপনি মাস্ক হজ গ্রুপকেই আপনার সফরের সঙ্গী করবেন?</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="p-6 bg-white rounded-xl shadow border border-slate-100 text-center">
+        <i class="fa-solid fa-book-quran text-3xl text-amber-600 mb-3"></i>
+        <h4 class="font-bold text-slate-900 mb-1">কুরআন-সুন্নাহর সঠিক দিকনির্দেশনা</h4>
+        <p class="text-xs text-slate-600">হজের পূর্বে প্রশিক্ষণ ও অভিজ্ঞ আলেমদের নিবিড় পর্যবেক্ষণ।</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow border border-slate-100 text-center">
+        <i class="fa-solid fa-hands-holding-child text-3xl text-amber-600 mb-3"></i>
+        <h4 class="font-bold text-slate-900 mb-1">পারিবারিক আন্তরিক যত্ন</h4>
+        <p class="text-xs text-slate-600">প্রতিটি সম্মানিত হাজীকে পরিবারের আপন সদস্যের মতো সেবা প্রদান।</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow border border-slate-100 text-center">
+        <i class="fa-solid fa-headset text-3xl text-amber-600 mb-3"></i>
+        <h4 class="font-bold text-slate-900 mb-1">সার্বক্ষণিক সাপোর্ট টিম</h4>
+        <p class="text-xs text-slate-600">বাংলাদেশ ও সৌদি আরবে নিজস্ব দক্ষ সাপোর্ট কর্মী সার্বক্ষণিক উপস্থিত।</p>
+      </div>
+      <div class="p-6 bg-white rounded-xl shadow border border-slate-100 text-center">
+        <i class="fa-solid fa-mosque text-3xl text-amber-600 mb-3"></i>
+        <h4 class="font-bold text-slate-900 mb-1">পবিত্র স্থানসমূহের জিয়ারাহ</h4>
+        <p class="text-xs text-slate-600">মক্কা ও মদিনার ঐতিহাসিক ও তাৎপর্যপূর্ণ স্থানসমূহ পরিদর্শনের ব্যবস্থা।</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <footer id="contact" class="bg-slate-950 text-white pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div>
+        <h3 class="text-2xl font-bold text-amber-400 mb-3">মাস্ক হজ গ্রুপ</h3>
+        <p class="text-slate-400 text-sm mb-4">পবিত্র সফরের বিশ্বস্ত সঙ্গী। আপনার পবিত্র হজ ও ওমরাহকে সহজ, আরামদায়ক ও গ্রহণীয় করে তোলাই আমাদের মূল লক্ষ্য।</p>
+        <p class="text-xs text-slate-500">ওয়েব: www.maskintbd.com</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold text-slate-200 mb-4">অফিসের ঠিকানা</h4>
+        <p class="text-sm text-slate-300 leading-relaxed mb-3">
+          <i class="fa-solid fa-location-dot text-amber-500 mr-2"></i>
+          67/1 Naya Paltan, China Town (East Tower), [20th floor] Suite-21/2, Dhaka-1000
+        </p>
+        <p class="text-sm text-slate-300 mb-2">
+          <i class="fa-solid fa-envelope text-amber-500 mr-2"></i> maskbd99@gmail.com
+        </p>
+      </div>
+      <div>
+        <h4 class="text-lg font-bold text-slate-200 mb-4">সরাসরি কথা বলুন</h4>
+        <p class="text-sm text-slate-300 mb-2"><i class="fa-solid fa-phone text-amber-500 mr-2"></i> +88 02-222229612</p>
+        <p class="text-sm text-slate-300 mb-4"><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i> +88 01711-258708</p>
+        <a href="https://facebook.com/khalilurrahman.iab" target="_blank" class="inline-flex items-center gap-2 bg-blue-700 hover:bg-blue-800 text-white text-xs px-4 py-2 rounded-lg transition">
+          <i class="fa-brands fa-facebook"></i> ফেসবুক পেজে যুক্ত থাকুন
+        </a>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 mt-12 pt-6 border-t border-slate-800 text-center text-xs text-slate-500">
+      &copy; 2026 MASK Hajj Group. সর্বস্বত্ব সংরক্ষিত।
+    </div>
+  </footer>
+
+  <!-- Admin / Staff Login Modal -->
+  <div id="loginModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden items-center justify-center z-50 p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="text-xl font-bold text-slate-900"><i class="fa-solid fa-shield-halved text-amber-600 mr-2"></i>অ্যাক্সেস লগইন</h3>
+        <button onclick="closeModal('loginModal')" class="text-slate-400 hover:text-slate-700"><i class="fa-solid fa-xmark text-lg"></i></button>
+      </div>
+      <p class="text-xs text-slate-500 mb-4">মাস্টার অ্যাডমিন বা স্টাফ পিন প্রবেশ করান:</p>
+      <input type="password" id="pinInput" placeholder="পিন কোড দিন (যেমন: admin123 বা staff123)" class="w-full border border-slate-300 p-3 rounded-lg text-sm mb-4 focus:ring-2 focus:ring-amber-500 outline-none">
+      <button onclick="handleLogin()" class="w-full bg-slate-900 hover:bg-slate-800 text-amber-400 font-bold py-3 rounded-lg text-sm transition">লগইন করুন</button>
+      <div class="mt-4 p-3 bg-slate-50 rounded-lg text-xs text-slate-600 space-y-1">
+        <p><strong>ডেমো মাস্টার পিন:</strong> <code>admin123</code> (সব নিয়ন্ত্রণ)</p>
+        <p><strong>ডেমো স্টাফ পিন:</strong> <code>staff123</code> (শুধু নোটিশ ও ছবি)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Staff Dashboard Modal -->
+  <div id="staffDashboard" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden items-center justify-center z-50 p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="text-lg font-bold text-slate-900"><i class="fa-solid fa-pen-to-square text-blue-600 mr-2"></i>স্টাফ নোটিশ কন্ট্রোল</h3>
+        <button onclick="closeModal('staffDashboard')" class="text-slate-400 hover:text-slate-700"><i class="fa-solid fa-xmark text-lg"></i></button>
+      </div>
+      <div class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">হোমপেজের চলমান নোটিশ পরিবর্তন করুন</label>
+          <textarea id="staffNoticeInput" rows="3" class="w-full border border-slate-300 p-3 rounded-lg text-sm focus:ring-2 focus:ring-blue-500 outline-none"></textarea>
+        </div>
+        <button onclick="saveNotice()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 rounded-lg text-sm transition">নোটিশ লাইভ আপডেট করুন</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Master Admin Dashboard Modal -->
+  <div id="masterDashboard" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden items-center justify-center z-50 p-4 overflow-y-auto">
+    <div class="bg-white rounded-2xl max-w-xl w-full p-6 shadow-2xl my-8">
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="text-lg font-bold text-slate-900"><i class="fa-solid fa-crown text-amber-600 mr-2"></i>মাস্টার অ্যাডমিন কন্ট্রোল</h3>
+        <button onclick="closeModal('masterDashboard')" class="text-slate-400 hover:text-slate-700"><i class="fa-solid fa-xmark text-lg"></i></button>
+      </div>
+      <div class="space-y-4 text-sm">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">নোটিশ বোর্ড টেক্সট</label>
+          <textarea id="masterNoticeInput" rows="2" class="w-full border border-slate-300 p-2 rounded-lg text-sm"></textarea>
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">জরুরি যোগাযোগ নম্বর</label>
+          <input type="text" id="masterPhoneInput" value="+88 01711-258708" class="w-full border border-slate-300 p-2 rounded-lg text-sm">
+        </div>
+        <button onclick="saveMasterSettings()" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-bold py-2.5 rounded-lg text-sm transition">সমস্ত পরিবর্তন সেভ করুন</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Client-side Logic -->
+  <script>
+    // Load persisted notice
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedNotice = localStorage.getItem('mask_notice');
+      if (savedNotice) {
+        document.getElementById('displayNotice').innerText = savedNotice;
+        document.getElementById('liveNoticeContent').innerText = savedNotice;
+      }
+    });
+
+    function openLoginModal() {
+      document.getElementById('loginModal').classList.remove('hidden');
+      document.getElementById('loginModal').classList.add('flex');
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.add('hidden');
+      document.getElementById(id).classList.remove('flex');
+    }
+
+    function handleLogin() {
+      const pin = document.getElementById('pinInput').value.trim();
+      closeModal('loginModal');
+      document.getElementById('pinInput').value = '';
+
+      if (pin === 'staff123') {
+        document.getElementById('staffNoticeInput').value = document.getElementById('displayNotice').innerText;
+        document.getElementById('staffDashboard').classList.remove('hidden');
+        document.getElementById('staffDashboard').classList.add('flex');
+      } else if (pin === 'admin123') {
+        document.getElementById('masterNoticeInput').value = document.getElementById('displayNotice').innerText;
+        document.getElementById('masterDashboard').classList.remove('hidden');
+        document.getElementById('masterDashboard').classList.add('flex');
+      } else {
+        alert('ভুল পিন নম্বর! আবার চেষ্টা করুন।');
+      }
+    }
+
+    function saveNotice() {
+      const newNotice = document.getElementById('staffNoticeInput').value.trim();
+      if(newNotice) {
+        localStorage.setItem('mask_notice', newNotice);
+        document.getElementById('displayNotice').innerText = newNotice;
+        document.getElementById('liveNoticeContent').innerText = newNotice;
+        alert('নোটিশ সফলভাবে আপডেট হয়েছে!');
+        closeModal('staffDashboard');
+      }
+    }
+
+    function saveMasterSettings() {
+      const newNotice = document.getElementById('masterNoticeInput').value.trim();
+      if(newNotice) {
+        localStorage.setItem('mask_notice', newNotice);
+        document.getElementById('displayNotice').innerText = newNotice;
+        document.getElementById('liveNoticeContent').innerText = newNotice;
+      }
+      alert('মাস্টার সেটিংস সফলভাবে আপডেট হয়েছে!');
+      closeModal('masterDashboard');
+    }
+  </script>
+</body>
+</html>
