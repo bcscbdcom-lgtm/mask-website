@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="bn" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,7 +60,9 @@
   <div class="bg-[#08182b] text-slate-300 text-xs py-2.5 px-4 border-b border-slate-800/80">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
       <div class="flex items-center gap-2">
-        <span class="inline-flex items-center gap-1.5 text-slate-300">
+        <span class="inline-flex items-center gap-1.5 text-slate-300"
+              data-en='<i class="fa-solid fa-certificate text-emerald-400 text-[11px]"></i> Licence No. 0709 • Verified by Ministry of Religious Affairs'
+              data-bn='<i class="fa-solid fa-certificate text-emerald-400 text-[11px]"></i> লাইসেন্স নং ০৭০৯ • ধর্ম বিষয়ক মন্ত্রণালয় অনুমোদিত'>
           <i class="fa-solid fa-certificate text-emerald-400 text-[11px]"></i> Licence No. 0709 • Verified by Ministry of Religious Affairs
         </span>
       </div>
@@ -69,10 +71,12 @@
           <i class="fa-solid fa-phone text-emerald-400 text-[10px]"></i> +88 01711-258708
         </a>
         <span>•</span>
-        <span>Open 10 AM – 7 PM</span>
+        <span data-en="Open 10 AM – 7 PM" data-bn="খোলা: সকাল ১০টা – সন্ধ্যা ৭টা">Open 10 AM – 7 PM</span>
         <span>•</span>
-        <button onclick="openLoginModal()" class="text-emerald-400 hover:underline flex items-center gap-1 font-semibold">
-          <i class="fa-solid fa-lock text-[10px]"></i> প্যানেল
+        <button onclick="openLoginModal()" class="text-emerald-400 hover:underline flex items-center gap-1 font-semibold"
+                data-en='<i class="fa-solid fa-lock text-[10px]"></i> Portal'
+                data-bn='<i class="fa-solid fa-lock text-[10px]"></i> ড্যাশবোর্ড'>
+          <i class="fa-solid fa-lock text-[10px]"></i> Portal
         </button>
       </div>
     </div>
@@ -97,21 +101,24 @@
 
         <!-- Links -->
         <div class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-slate-700">
-          <a href="#home" class="hover:text-brand-teal transition">Home</a>
-          <a href="#about" class="hover:text-brand-teal transition">About</a>
-          <a href="#packages" class="hover:text-brand-teal transition">Hajj Packages</a>
-          <a href="#umrah" class="hover:text-brand-teal transition">Umrah Packages</a>
-          <a href="#gallery" class="hover:text-brand-teal transition">Gallery</a>
-          <a href="#blog" class="hover:text-brand-teal transition">Blog</a>
-          <a href="#contact" class="hover:text-brand-teal transition">Contact</a>
+          <a href="#home" class="hover:text-brand-teal transition" data-en="Home" data-bn="হোম">Home</a>
+          <a href="#about" class="hover:text-brand-teal transition" data-en="About" data-bn="পরিচিতি">About</a>
+          <a href="#packages" class="hover:text-brand-teal transition" data-en="Hajj Packages" data-bn="হজ প্যাকেজসমূহ">Hajj Packages</a>
+          <a href="#umrah" class="hover:text-brand-teal transition" data-en="Umrah Packages" data-bn="ওমরাহ প্যাকেজসমূহ">Umrah Packages</a>
+          <a href="#gallery" class="hover:text-brand-teal transition" data-en="Gallery" data-bn="গ্যালারি">Gallery</a>
+          <a href="#blog" class="hover:text-brand-teal transition" data-en="Blog" data-bn="ব্লগ">Blog</a>
+          <a href="#contact" class="hover:text-brand-teal transition" data-en="Contact" data-bn="যোগাযোগ">Contact</a>
         </div>
 
         <!-- Right Controls -->
         <div class="flex items-center gap-3">
-          <button class="hidden sm:flex items-center gap-1.5 text-xs font-bold text-slate-600 bg-slate-100 hover:bg-slate-200 px-3 py-2 rounded-lg transition">
+          <!-- Dynamic Language Toggle Button -->
+          <button id="langToggleBtn" onclick="toggleLanguage()" class="flex items-center gap-1.5 text-xs font-bold text-slate-700 bg-slate-100 hover:bg-emerald-50 hover:text-emerald-700 border border-slate-200 px-3.5 py-2 rounded-lg transition">
             <i class="fa-solid fa-globe"></i> বাংলা
           </button>
-          <button onclick="openPreRegModal()" class="teal-gradient-btn text-white text-xs font-bold px-5 py-2.5 rounded-full shadow transition">
+          
+          <button onclick="openPreRegModal()" class="teal-gradient-btn text-white text-xs font-bold px-5 py-2.5 rounded-full shadow transition"
+                  data-en="Book Consultation" data-bn="কনসালটেশন বুকিং">
             Book Consultation
           </button>
         </div>
@@ -127,23 +134,30 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <!-- Left Text -->
         <div class="lg:col-span-7">
-          <div class="inline-flex items-center gap-2 bg-slate-800/80 border border-slate-700/80 px-3.5 py-1.5 rounded-full text-xs font-semibold text-emerald-400 mb-6 backdrop-blur-sm">
-            <span>✦ Since 2015 • Dhaka, Bangladesh</span>
+          <div class="inline-flex items-center gap-2 bg-slate-800/80 border border-slate-700/80 px-3.5 py-1.5 rounded-full text-xs font-semibold text-emerald-400 mb-6 backdrop-blur-sm"
+               data-en="✦ Since 2015 • Dhaka, Bangladesh"
+               data-bn="✦ ২০১৫ থেকে সেবায় নিয়োজিত • ঢাকা, বাংলাদেশ">
+            ✦ Since 2015 • Dhaka, Bangladesh
           </div>
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.12] mb-6">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.12] mb-6"
+              data-en='Your sacred journey, <br><span class="text-brand-accent italic font-medium">planned with care and clarity.</span>'
+              data-bn='আপনার পবিত্র সফর, <br><span class="text-brand-accent italic font-medium">আস্থা ও নিখুঁত যত্নে সুপরিকল্পিত।</span>'>
             Your sacred journey, <br>
             <span class="text-brand-accent italic font-medium">planned with care and clarity.</span>
           </h1>
-          <p class="text-slate-300 text-sm sm:text-base max-w-xl leading-relaxed mb-8">
+          <p class="text-slate-300 text-sm sm:text-base max-w-xl leading-relaxed mb-8"
+             data-en="Licensed Hajj & Umrah support from Bangladesh to the Holy Cities — with visa, flights, hotels, training and dependable on-ground care."
+             data-bn="পবিত্র কুরআন ও সুন্নাহর আলোকে বাংলাদেশ থেকে মক্কা-মদিনায় নির্ভরযোগ্য হজ ও ওমরাহ সেবা — ভিসা, বিমান টিকিট, আবাসন ও আলেমদের সার্বক্ষণিক তত্ত্বাবধান।">
             Licensed Hajj & Umrah support from Bangladesh to the Holy Cities — with visa, flights, hotels, training and dependable on-ground care.
           </p>
 
           <div class="flex flex-wrap items-center gap-4 mb-12">
             <button onclick="openPreRegModal()" class="bg-white hover:bg-slate-100 text-brand-dark font-bold px-6 py-3.5 rounded-xl shadow-lg transition flex items-center gap-2 text-xs sm:text-sm">
-              <span>Book Free Consultation</span>
+              <span data-en="Book Free Consultation" data-bn="ফ্রি পরামর্শ নিন">Book Free Consultation</span>
               <i class="fa-solid fa-arrow-right text-xs"></i>
             </button>
-            <a href="#packages" class="bg-slate-800/80 hover:bg-slate-800 border border-slate-700 text-white font-semibold px-6 py-3.5 rounded-xl transition text-xs sm:text-sm">
+            <a href="#packages" class="bg-slate-800/80 hover:bg-slate-800 border border-slate-700 text-white font-semibold px-6 py-3.5 rounded-xl transition text-xs sm:text-sm"
+               data-en="View Packages" data-bn="প্যাকেজসমূহ দেখুন">
               View Packages
             </a>
           </div>
@@ -152,15 +166,15 @@
           <div class="grid grid-cols-3 gap-6 pt-6 border-t border-slate-800 max-w-lg">
             <div>
               <div class="text-2xl sm:text-3xl font-extrabold text-white">1200+</div>
-              <div class="text-xs text-slate-400 mt-0.5">Happy Pilgrims</div>
+              <div class="text-xs text-slate-400 mt-0.5" data-en="Happy Pilgrims" data-bn="সন্তুষ্ট হাজীবৃন্দ">Happy Pilgrims</div>
             </div>
             <div>
               <div class="text-2xl sm:text-3xl font-extrabold text-white">11+</div>
-              <div class="text-xs text-slate-400 mt-0.5">Years of trust</div>
+              <div class="text-xs text-slate-400 mt-0.5" data-en="Years of trust" data-bn="বছরের নির্ভরযোগ্যতা">Years of trust</div>
             </div>
             <div>
               <div class="text-2xl sm:text-3xl font-extrabold text-amber-400">4.9★</div>
-              <div class="text-xs text-slate-400 mt-0.5">Avg. rating</div>
+              <div class="text-xs text-slate-400 mt-0.5" data-en="Avg. rating" data-bn="গড় রেটিং">Avg. rating</div>
             </div>
           </div>
         </div>
@@ -172,14 +186,14 @@
               <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-500/20 border border-emerald-400/30 flex items-center justify-center text-emerald-400 text-2xl">
                 <i class="fa-solid fa-kaaba"></i>
               </div>
-              <p class="text-amber-300 font-semibold text-lg mb-1">"وَأَتِمُّوا الْحَجَّ وَالْعُمْرَةَ لِلَّهِ"</p>
-              <p class="text-xs text-slate-300 italic mb-6">"Complete the Hajj and Umrah sincerely for Allah alone"</p>
+              <p class="text-amber-300 font-semibold text-lg mb-1">"وَأَتِمُّوا الْحَجَّ وَالْعُمْরَةَ لِلَّهِ"</p>
+              <p class="text-xs text-slate-300 italic mb-6" data-en='"Complete the Hajj and Umrah sincerely for Allah alone"' data-bn='"এবং আল্লাহর সন্তুষ্টির উদ্দেশ্যে হজ ও ওমরাহ পূর্ণ করো"'>"Complete the Hajj and Umrah sincerely for Allah alone"</p>
               <div class="bg-slate-900/90 rounded-xl p-4 text-left border border-slate-800">
                 <div class="flex items-center gap-2 text-emerald-400 font-bold text-xs mb-1">
                   <i class="fa-solid fa-shield-halved"></i>
-                  <span>Licence No. 0709 — Ministry Verified</span>
+                  <span data-en="Licence No. 0709 — Ministry Verified" data-bn="লাইসেন্স নং ০৭০৯ — মন্ত্রণালয় অনুমোদিত">Licence No. 0709 — Ministry Verified</span>
                 </div>
-                <p class="text-[11px] text-slate-400">Trusted by Bangladeshi families for Hajj & Umrah since 2015.</p>
+                <p class="text-[11px] text-slate-400" data-en="Trusted by Bangladeshi families for Hajj & Umrah since 2015." data-bn="২০১৫ সাল থেকে বাংলাদেশের পরিবারসমূহের বিশ্বস্ত হজ ও ওমরাহ সেবা।">Trusted by Bangladeshi families for Hajj & Umrah since 2015.</p>
               </div>
             </div>
           </div>
@@ -191,14 +205,14 @@
   <!-- 4. Trusted & Certified Strip -->
   <section class="py-9 border-b border-slate-200/60 bg-white">
     <div class="max-w-7xl mx-auto px-4 text-center">
-      <span class="text-[11px] font-bold tracking-widest text-slate-400 uppercase block mb-5">TRUSTED & CERTIFIED</span>
+      <span class="text-[11px] font-bold tracking-widest text-slate-400 uppercase block mb-5" data-en="TRUSTED & CERTIFIED" data-bn="অনুমোদিত ও স্বীকৃত পার্টনারগণ">TRUSTED & CERTIFIED</span>
       <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-slate-600 text-xs font-semibold">
-        <span class="inline-flex items-center gap-2"><i class="fa-solid fa-award text-emerald-600"></i> HAAB Member</span>
-        <span class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600"></i> Ministry of Religious Affairs</span>
-        <span class="inline-flex items-center gap-2"><i class="fa-solid fa-plane-departure text-emerald-600"></i> ATAB Member</span>
-        <span class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600"></i> Rawaf Mina Approved</span>
-        <span class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600"></i> Ministry of Hajj & Umrah (KSA)</span>
-        <span class="inline-flex items-center gap-2"><i class="fa-solid fa-compass text-emerald-600"></i> Al Bait Guests</span>
+        <span class="inline-flex items-center gap-2"><i class="fa-solid fa-award text-emerald-600"></i> <span data-en="HAAB Member" data-bn="হাব (HAAB) সদস্য">HAAB Member</span></span>
+        <span class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600"></i> <span data-en="Ministry of Religious Affairs" data-bn="ধর্ম বিষয়ক মন্ত্রণালয়">Ministry of Religious Affairs</span></span>
+        <span class="inline-flex items-center gap-2"><i class="fa-solid fa-plane-departure text-emerald-600"></i> <span data-en="ATAB Member" data-bn="আটাব (ATAB) সদস্য">ATAB Member</span></span>
+        <span class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600"></i> <span data-en="Rawaf Mina Approved" data-bn="রাওয়াফ মিনা অনুমোদিত">Rawaf Mina Approved</span></span>
+        <span class="inline-flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-600"></i> <span data-en="Ministry of Hajj & Umrah (KSA)" data-bn="সৌদি হজ ও ওমরাহ মন্ত্রণালয়">Ministry of Hajj & Umrah (KSA)</span></span>
+        <span class="inline-flex items-center gap-2"><i class="fa-solid fa-compass text-emerald-600"></i> <span data-en="Al Bait Guests" data-bn="আল বাইত গেস্টস">Al Bait Guests</span></span>
       </div>
     </div>
   </section>
@@ -210,46 +224,51 @@
         <div class="bg-white p-4 rounded-3xl soft-shadow border border-slate-100">
           <div class="bg-gradient-to-br from-emerald-500/10 to-teal-500/20 rounded-2xl p-10 text-center">
             <i class="fa-solid fa-hands-praying text-6xl text-brand-teal mb-4"></i>
-            <h4 class="text-xl font-bold text-brand-navy">MASK Hajj Group</h4>
-            <p class="text-xs text-slate-600 mt-2">Dedicated to your spiritual peace and comfortable holy journey.</p>
+            <h4 class="text-xl font-bold text-brand-navy" data-en="MASK Hajj Group" data-bn="মাস্ক হজ গ্রুপ">MASK Hajj Group</h4>
+            <p class="text-xs text-slate-600 mt-2" data-en="Dedicated to your spiritual peace and comfortable holy journey." data-bn="পবিত্র মক্কা ও মদিনায় হাজীদের আত্মিক প্রশান্তি ও আরামদায়ক সেবায় নিবেদিত।">Dedicated to your spiritual peace and comfortable holy journey.</p>
           </div>
         </div>
         <div class="absolute -bottom-4 -right-2 bg-white rounded-2xl p-4 shadow-xl border border-slate-100 flex items-center gap-3">
           <div class="w-10 h-10 rounded-xl bg-emerald-500 text-white font-bold flex items-center justify-center">11+</div>
           <div class="text-left">
-            <div class="text-xs font-bold text-slate-900">Years of service</div>
-            <div class="text-[10px] text-slate-500">Since 2015 in Dhaka</div>
+            <div class="text-xs font-bold text-slate-900" data-en="Years of service" data-bn="বছরের অভিজ্ঞতা">Years of service</div>
+            <div class="text-[10px] text-slate-500" data-en="Since 2015 in Dhaka" data-bn="২০১৫ সাল থেকে ঢাকায়">Since 2015 in Dhaka</div>
           </div>
         </div>
       </div>
 
       <div class="lg:col-span-7">
-        <span class="inline-block bg-emerald-50 text-emerald-700 border border-emerald-200/60 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
-          About Broadway / MASK
+        <span class="inline-block bg-emerald-50 text-emerald-700 border border-emerald-200/60 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4"
+              data-en="About MASK Hajj Group" data-bn="মাস্ক হজ গ্রুপ পরিচিতি">
+          About MASK Hajj Group
         </span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6"
+            data-en="11+ years of guiding families to the Two Holy Mosques."
+            data-bn="১১+ বছর ধরে পবিত্র দুই মসজিদে পরিবারসমূহের বিশ্বস্ত পথপ্রদর্শক।">
           11+ years of guiding families to the Two Holy Mosques.
         </h2>
-        <p class="text-slate-600 leading-relaxed text-sm mb-8">
+        <p class="text-slate-600 leading-relaxed text-sm mb-8"
+           data-en="From first consultation to your safe return home, we provide trusted support for every step of your Hajj or Umrah journey. Our team combines ministry-approved service, practical planning and compassionate guidance for families and first-time pilgrims alike."
+           data-bn="প্রথম পরামর্শ সভা থেকে শুরু করে দেশে নিরাপদে ফেরা পর্যন্ত প্রতিটি ধাপে আমরা নিশ্চিত করি নিখুঁত সেবা। অভিজ্ঞ আলেম ও মুয়াল্লিমদের দিকনির্দেশনায় পরিবার ও নতুন হাজীদের জন্য আমাদের কাফেলা অত্যন্ত নির্ভরযোগ্য।">
           From first consultation to your safe return home, we provide trusted support for every step of your Hajj or Umrah journey. Our team combines ministry-approved service, practical planning and compassionate guidance for families and first-time pilgrims alike.
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-semibold text-slate-700">
-          <div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500"></i> Visa & Flights</div>
-          <div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500"></i> Premium Accommodation</div>
-          <div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500"></i> Pre-departure Seminars</div>
-          <div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500"></i> On-ground Mu'allim</div>
+          <div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500"></i> <span data-en="Visa & Direct Flights" data-bn="ভিসা ও সরাসরি বিমান টিকিট">Visa & Direct Flights</span></div>
+          <div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500"></i> <span data-en="Premium Hotel Accommodation" data-bn="উন্নতমানের হোটেল আবাসন">Premium Hotel Accommodation</span></div>
+          <div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500"></i> <span data-en="Pre-departure Seminars" data-bn="হজপূর্ব প্রশিক্ষণ কর্মশালা">Pre-departure Seminars</span></div>
+          <div class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500"></i> <span data-en="On-ground Dedicated Mu'allim" data-bn="সার্বক্ষণিক অভিজ্ঞ মুয়াল্লিম সাপোর্ট">On-ground Dedicated Mu'allim</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 6. Our Services (8 Cards) -->
+  <!-- 6. Our Services -->
   <section class="py-20 bg-slate-50/60 border-y border-slate-200/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Our Services</span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Everything you need, from Bangladesh to the Holy Cities.</h2>
-        <p class="text-slate-500 text-sm mt-3">From visa and flights to hotels and training, we handle every detail of your sacred journey with care.</p>
+        <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" data-en="Our Services" data-bn="আমাদের সেবাসমূহ">Our Services</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3" data-en="Everything you need, from Bangladesh to the Holy Cities." data-bn="বাংলাদেশ থেকে পবিত্র মক্কা-মদিনা সফরের সব আয়োজন এক ছাদের নিচে।">Everything you need, from Bangladesh to the Holy Cities.</h2>
+        <p class="text-slate-500 text-sm mt-3" data-en="From visa and flights to hotels and training, we handle every detail of your sacred journey with care." data-bn="ভিসা, ফ্লাইট, হোটেল বুকিং থেকে শুরু করে প্রশিক্ষণ পর্যন্ত প্রতিটি পদক্ষেপে আমাদের দায়িত্বশীল সেবা।">From visa and flights to hotels and training, we handle every detail of your sacred journey with care.</p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -257,57 +276,57 @@
           <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-teal-500 to-emerald-400 text-white flex items-center justify-center text-xl mb-5">
             <i class="fa-solid fa-kaaba"></i>
           </div>
-          <h3 class="font-bold text-slate-900 text-base mb-2">Hajj Packages</h3>
-          <p class="text-xs text-slate-500 leading-relaxed">Multiple tiers from Aziziyah to Premium Shifting, Saudi Ministry approved.</p>
+          <h3 class="font-bold text-slate-900 text-base mb-2" data-en="Hajj Packages" data-bn="হজ প্যাকেজসমূহ">Hajj Packages</h3>
+          <p class="text-xs text-slate-500 leading-relaxed" data-en="Multiple tiers from Budget to VIP Luxury, Saudi Ministry approved." data-bn="সাশ্রয়ী থেকে শুরু করে প্রিমিয়াম ও ভিআইপি ক্যাটাগরির অনুমোদিত হজ প্যাকেজ।">Multiple tiers from Budget to VIP Luxury, Saudi Ministry approved.</p>
         </div>
         <div class="bg-white p-6 rounded-2xl border border-slate-100 soft-shadow hover:-translate-y-1 transition duration-300">
           <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-teal-500 to-emerald-400 text-white flex items-center justify-center text-xl mb-5">
             <i class="fa-solid fa-plane"></i>
           </div>
-          <h3 class="font-bold text-slate-900 text-base mb-2">Umrah Packages</h3>
-          <p class="text-xs text-slate-500 leading-relaxed">Year-round departures, family-friendly itineraries, Ramadan specials.</p>
+          <h3 class="font-bold text-slate-900 text-base mb-2" data-en="Umrah Packages" data-bn="ওমরাহ প্যাকেজসমূহ">Umrah Packages</h3>
+          <p class="text-xs text-slate-500 leading-relaxed" data-en="Year-round departures, family-friendly itineraries, Ramadan specials." data-bn="সারা বছর প্রতি সপ্তাহে গ্রুপ ও ফ্যামিলি ওমরাহ এবং বিশেষ রমজান কাফেলা।">Year-round departures, family-friendly itineraries, Ramadan specials.</p>
         </div>
         <div class="bg-white p-6 rounded-2xl border border-slate-100 soft-shadow hover:-translate-y-1 transition duration-300">
           <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-teal-500 to-emerald-400 text-white flex items-center justify-center text-xl mb-5">
             <i class="fa-solid fa-passport"></i>
           </div>
-          <h3 class="font-bold text-slate-900 text-base mb-2">Visa Processing</h3>
-          <p class="text-xs text-slate-500 leading-relaxed">Nusuk e-visa, family visa, paperwork handled end-to-end.</p>
+          <h3 class="font-bold text-slate-900 text-base mb-2" data-en="Visa Processing" data-bn="ভিসা প্রসেসিং">Visa Processing</h3>
+          <p class="text-xs text-slate-500 leading-relaxed" data-en="Nusuk e-visa, family visa, paperwork handled end-to-end." data-bn="নুসুক ই-ভিসা, ওমরাহ ও পারিবারিক ভিসার ঝামেলাহীন দ্রুততম সমাধান।">Nusuk e-visa, family visa, paperwork handled end-to-end.</p>
         </div>
         <div class="bg-white p-6 rounded-2xl border border-slate-100 soft-shadow hover:-translate-y-1 transition duration-300">
           <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-teal-500 to-emerald-400 text-white flex items-center justify-center text-xl mb-5">
             <i class="fa-solid fa-ticket"></i>
           </div>
-          <h3 class="font-bold text-slate-900 text-base mb-2">Flight Booking</h3>
-          <p class="text-xs text-slate-500 leading-relaxed">Biman, Saudia, Fly Nas — best fares from Dhaka with group rates.</p>
+          <h3 class="font-bold text-slate-900 text-base mb-2" data-en="Flight Booking" data-bn="ফ্লাইট বুকিং">Flight Booking</h3>
+          <p class="text-xs text-slate-500 leading-relaxed" data-en="Biman, Saudia, Fly Nas — best fares from Dhaka with group rates." data-bn="সৌদি এয়ারলাইন্স, বাংলাদেশ বিমান ও ফ্লাইনাসে সেরা গ্রুপ রেটের টিকিট।">Biman, Saudia, Fly Nas — best fares from Dhaka with group rates.</p>
         </div>
         <div class="bg-white p-6 rounded-2xl border border-slate-100 soft-shadow hover:-translate-y-1 transition duration-300">
           <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-teal-500 to-emerald-400 text-white flex items-center justify-center text-xl mb-5">
             <i class="fa-solid fa-hotel"></i>
           </div>
-          <h3 class="font-bold text-slate-900 text-base mb-2">Hotel Accommodation</h3>
-          <p class="text-xs text-slate-500 leading-relaxed">3★ to 5★ near Haram in Makkah and Markaziyah in Madinah.</p>
+          <h3 class="font-bold text-slate-900 text-base mb-2" data-en="Hotel Accommodation" data-bn="হোটেল আবাসন">Hotel Accommodation</h3>
+          <p class="text-xs text-slate-500 leading-relaxed" data-en="3★ to 5★ near Haram in Makkah and Markaziyah in Madinah." data-bn="মক্কা ও মদিনা হারাম শরীফের কাছে ৩★ থেকে ৫★ লাক্সারি মানের হোটেল।">3★ to 5★ near Haram in Makkah and Markaziyah in Madinah.</p>
         </div>
         <div class="bg-white p-6 rounded-2xl border border-slate-100 soft-shadow hover:-translate-y-1 transition duration-300">
           <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-teal-500 to-emerald-400 text-white flex items-center justify-center text-xl mb-5">
             <i class="fa-solid fa-graduation-cap"></i>
           </div>
-          <h3 class="font-bold text-slate-900 text-base mb-2">Pre-departure Training</h3>
-          <p class="text-xs text-slate-500 leading-relaxed">Day-long Hajj seminars, manasik books, video tutorials and consultations.</p>
+          <h3 class="font-bold text-slate-900 text-base mb-2" data-en="Pre-departure Training" data-bn="হজ প্রশিক্ষণ">Pre-departure Training</h3>
+          <p class="text-xs text-slate-500 leading-relaxed" data-en="Day-long Hajj seminars, manasik books, video tutorials and consultations." data-bn="দিনব্যাপী ওরিয়েন্টেশন, সহীহ হজ গাইড বই ও ভিডিও টিউটোরিয়াল।">Day-long Hajj seminars, manasik books, video tutorials and consultations.</p>
         </div>
         <div class="bg-white p-6 rounded-2xl border border-slate-100 soft-shadow hover:-translate-y-1 transition duration-300">
           <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-teal-500 to-emerald-400 text-white flex items-center justify-center text-xl mb-5">
             <i class="fa-solid fa-headset"></i>
           </div>
-          <h3 class="font-bold text-slate-900 text-base mb-2">On-ground Mu'allim</h3>
-          <p class="text-xs text-slate-500 leading-relaxed">Certified scholars accompany every group in Makkah and Madinah.</p>
+          <h3 class="font-bold text-slate-900 text-base mb-2" data-en="On-ground Mu'allim" data-bn="মুয়াল্লিম গাইড">On-ground Mu'allim</h3>
+          <p class="text-xs text-slate-500 leading-relaxed" data-en="Certified scholars accompany every group in Makkah and Madinah." data-bn="মক্কা ও মদিনায় কাফেলার সাথে সার্বক্ষণিক অভিজ্ঞ মুয়াল্লিম ও আলেম গাইড।">Certified scholars accompany every group in Makkah and Madinah.</p>
         </div>
         <div class="bg-white p-6 rounded-2xl border border-slate-100 soft-shadow hover:-translate-y-1 transition duration-300">
           <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-teal-500 to-emerald-400 text-white flex items-center justify-center text-xl mb-5">
             <i class="fa-solid fa-location-dot"></i>
           </div>
-          <h3 class="font-bold text-slate-900 text-base mb-2">Ziyarah Tours</h3>
-          <p class="text-xs text-slate-500 leading-relaxed">Historical sites in Makkah, Madinah and optional Taif & Jeddah.</p>
+          <h3 class="font-bold text-slate-900 text-base mb-2" data-en="Ziyarah Tours" data-bn="জিয়ারাহ সফর">Ziyarah Tours</h3>
+          <p class="text-xs text-slate-500 leading-relaxed" data-en="Historical sites in Makkah, Madinah and optional Taif & Jeddah." data-bn="মক্কা, মদিনা, তায়েফ, বদর ও ঐতিহাসিক স্থানসমূহের সুশৃঙ্খল সফর।">Historical sites in Makkah, Madinah and optional Taif & Jeddah.</p>
         </div>
       </div>
     </div>
@@ -323,40 +342,42 @@
               <div class="w-24 h-24 mx-auto rounded-full bg-emerald-500/20 border-2 border-emerald-400 flex items-center justify-center text-4xl text-emerald-400 mb-4">
                 <i class="fa-solid fa-user-tie"></i>
               </div>
-              <h3 class="text-lg font-bold text-white">Dr. Mohammad Imam Hossain</h3>
-              <p class="text-xs text-emerald-400 font-semibold mt-1">Lead Hajj Guide • Ph.D, Islamic University</p>
+              <h3 class="text-lg font-bold text-white" data-en="Dr. Mohammad Imam Hossain" data-bn="ড. মুহাম্মাদ ইমাম হোসেন">Dr. Mohammad Imam Hossain</h3>
+              <p class="text-xs text-emerald-400 font-semibold mt-1" data-en="Lead Hajj Guide • Ph.D, Islamic University" data-bn="প্রধান ধর্মীয় উপদেষ্টা • পিএইচডি, ইসলামিক বিশ্ববিদ্যালয়">Lead Hajj Guide • Ph.D, Islamic University</p>
             </div>
           </div>
         </div>
 
         <div class="lg:col-span-7">
-          <span class="text-emerald-400 font-bold uppercase tracking-wider text-xs">MEET YOUR GUIDE</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-6">
+          <span class="text-emerald-400 font-bold uppercase tracking-wider text-xs" data-en="MEET YOUR GUIDE" data-bn="আমাদের আলেম মেন্টরগণ">MEET YOUR GUIDE</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-6" data-en="Spiritual guidance from trusted scholars and mentors." data-bn="বিজ্ঞ ও প্রখ্যাত আলেমদের সরাসরি তত্ত্বাবধানে পবিত্র সফর।">
             Spiritual guidance from trusted scholars and mentors.
           </h2>
-          <p class="text-slate-300 text-sm leading-relaxed mb-8">
+          <p class="text-slate-300 text-sm leading-relaxed mb-8"
+             data-en="Each group is led by a certified scholar with deep knowledge of Hajj rites, Arabic, and the holy cities. They walk every step with you — from the first niyyah to your safe return home."
+             data-bn="মাস্ক হজ গ্রুপের প্রতিটি কাফেলা অভিজ্ঞ আলেমদের নেতৃত্বে পরিচালিত হয়। ইহরাম বাঁধা থেকে শুরু করে প্রতিটি রোকন পালনে আপনি পাবেন সহীহ দিকনির্দেশনা।">
             Each group is led by a certified scholar with deep knowledge of Hajj rites, Arabic, and the holy cities. They walk every step with you — from the first niyyah to your safe return home.
           </p>
 
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             <div class="bg-slate-800/80 border border-slate-700/80 p-4 rounded-xl">
               <i class="fa-solid fa-graduation-cap text-emerald-400 text-lg mb-2"></i>
-              <div class="text-xs font-bold text-white">Ph.D, Islamic University</div>
-              <div class="text-[10px] text-slate-400 mt-1">Certified Islamic scholar</div>
+              <div class="text-xs font-bold text-white" data-en="Ph.D Scholars" data-bn="উচ্চশিক্ষিত আলেম">Ph.D Scholars</div>
+              <div class="text-[10px] text-slate-400 mt-1" data-en="Certified Islamic scholars" data-bn="প্রখ্যাত বিশ্ববিদ্যালয়ের ডিগ্রিধারী">Certified Islamic scholars</div>
             </div>
             <div class="bg-slate-800/80 border border-slate-700/80 p-4 rounded-xl">
               <i class="fa-solid fa-language text-emerald-400 text-lg mb-2"></i>
-              <div class="text-xs font-bold text-white">Multilingual</div>
-              <div class="text-[10px] text-slate-400 mt-1">Bangla, Urdu, English, Arabic</div>
+              <div class="text-xs font-bold text-white" data-en="Multilingual" data-bn="বহুভাষিক সেবা">Multilingual</div>
+              <div class="text-[10px] text-slate-400 mt-1" data-en="Bangla, Urdu, English, Arabic" data-bn="বাংলা, আরবি, উর্দু ও ইংরেজি">Bangla, Urdu, English, Arabic</div>
             </div>
             <div class="bg-slate-800/80 border border-slate-700/80 p-4 rounded-xl">
               <i class="fa-solid fa-users text-emerald-400 text-lg mb-2"></i>
-              <div class="text-xs font-bold text-white">Small Groups</div>
-              <div class="text-[10px] text-slate-400 mt-1">Max 30 pilgrims</div>
+              <div class="text-xs font-bold text-white" data-en="Small Groups" data-bn="ছোট কাফেলা">Small Groups</div>
+              <div class="text-[10px] text-slate-400 mt-1" data-en="Max 30 pilgrims per group" data-bn="প্রতি গ্রুপে নিবিড় যত্ন">Max 30 pilgrims per group</div>
             </div>
           </div>
 
-          <button class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs px-6 py-3 rounded-xl transition">
+          <button class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs px-6 py-3 rounded-xl transition" data-en="Meet All Guides" data-bn="সকল গাইডদের পরিচিতি">
             Meet All Guides
           </button>
         </div>
@@ -367,86 +388,86 @@
   <!-- 8. Hajj Packages Section -->
   <section id="packages" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center max-w-3xl mx-auto mb-16">
-      <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Hajj 2027</span>
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Hajj Packages</h2>
-      <p class="text-slate-500 text-sm mt-2">Pre-registration open for 2027 • Choose the journey that fits you best</p>
+      <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" data-en="Hajj 2026–2027" data-bn="হজ ২০২৬–২০২৭">Hajj 2026–2027</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3" data-en="Hajj Packages" data-bn="হজ প্যাকেজসমূহ">Hajj Packages</h2>
+      <p class="text-slate-500 text-sm mt-2" data-en="Pre-registration open • Choose the journey that fits you best" data-bn="প্রাক-নিবন্ধন চলছে • আপনার পছন্দমতো সেরা প্যাকেজ বেছে নিন">Pre-registration open • Choose the journey that fits you best</p>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       <!-- 1 -->
       <div class="bg-white rounded-3xl p-6 border border-slate-200/80 soft-shadow flex flex-col justify-between hover:border-emerald-500 transition">
         <div>
-          <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Short Stay</span>
-          <h3 class="text-base font-bold text-slate-900 mt-3">Azizia (Short) Package</h3>
-          <div class="text-xs text-slate-400 mb-2">12–15 Days</div>
-          <div class="text-xl font-extrabold text-emerald-600 mb-4">৳ ৬২০,০০০</div>
+          <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase" data-en="Budget Saver" data-bn="বাজেট সেভার">Budget Saver</span>
+          <h3 class="text-base font-bold text-slate-900 mt-3" data-en="Azizia Budget Package" data-bn="সাশ্রয়ী ফুল প্যাকেজ">Azizia Budget Package</h3>
+          <div class="text-xs text-slate-400 mb-2" data-en="35–40 Days" data-bn="৩৫–৪০ দিন">35–40 Days</div>
+          <div class="text-xl font-extrabold text-emerald-600 mb-4" data-en="৳ 5,13,648" data-bn="৳ ৫,১৩,৬৪৮">৳ 5,13,648</div>
           <ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-4">
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span>Azizia apartment stay 10–15 days</span></li>
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span>Category C Mina & Arafat tents</span></li>
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span>Hady (Qurbani) included</span></li>
+            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span data-en="Makkah & Madinah 1000-3000m hotel" data-bn="মক্কা ও মদিনা ১০০০-৩০০০ মি. হোটেল">Makkah & Madinah 1000-3000m hotel</span></li>
+            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span data-en="3 times catering meals included" data-bn="৩ বেলা দেশীয় খাবার ব্যবস্থা">3 times catering meals included</span></li>
+            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span data-en="Direct flights (Saudia/Biman)" data-bn="সরাসরি ফ্লাইট (সৌদি/বিমান)">Direct flights (Saudia/Biman)</span></li>
           </ul>
         </div>
         <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-          <button onclick="openPreRegModal('Azizia Short Package')" class="bg-slate-100 hover:bg-emerald-600 hover:text-white text-slate-800 text-xs font-bold px-3.5 py-2 rounded-xl transition">Enquire / Book</button>
-          <a href="#" class="text-xs font-bold text-slate-600 hover:text-emerald-600">View Details →</a>
+          <button onclick="openPreRegModal('সাশ্রয়ী ফুল প্যাকেজ')" class="bg-slate-100 hover:bg-emerald-600 hover:text-white text-slate-800 text-xs font-bold px-3.5 py-2 rounded-xl transition" data-en="Enquire / Book" data-bn="বুকিং আবেদন">Enquire / Book</button>
+          <a href="https://wa.me/8801711258708" target="_blank" class="text-xs font-bold text-slate-600 hover:text-emerald-600" data-en="Details →" data-bn="বিস্তারিত →">Details →</a>
         </div>
       </div>
 
       <!-- 2 -->
       <div class="bg-white rounded-3xl p-6 border border-slate-200/80 soft-shadow flex flex-col justify-between hover:border-emerald-500 transition">
         <div>
-          <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Economy</span>
-          <h3 class="text-base font-bold text-slate-900 mt-3">Economy Package</h3>
-          <div class="text-xs text-slate-400 mb-2">35–40 Days</div>
-          <div class="text-xl font-extrabold text-emerald-600 mb-4">৳ ৬৫০,০০০</div>
+          <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase" data-en="Economy" data-bn="ইকোনমি">Economy</span>
+          <h3 class="text-base font-bold text-slate-900 mt-3" data-en="Economy Package" data-bn="ইকোনমি প্যাকেজ">Economy Package</h3>
+          <div class="text-xs text-slate-400 mb-2" data-en="35–40 Days" data-bn="৩৫–৪০ দিন">35–40 Days</div>
+          <div class="text-xl font-extrabold text-emerald-600 mb-4" data-en="৳ 5,40,000" data-bn="৳ ৫,৪০,০০০">৳ 5,40,000</div>
           <ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-4">
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span>Makkah hotel 800–1200 m of Haram</span></li>
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span>Madinah Markaziyah hotel 350–500 m</span></li>
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span>Guided Ziyarah visits included</span></li>
+            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span data-en="Makkah hotel 700–900 m of Haram" data-bn="হারাম শরিফ ৭০০-৯০০ মি. হোটেল">Makkah hotel 700–900 m of Haram</span></li>
+            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span data-en="Category C Mina tents (6-7 days)" data-bn="সি ক্যাটাগরি মিনা তাবু (৬-৭ দিন)">Category C Mina tents (6-7 days)</span></li>
+            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span data-en="Qurbani (Hady) included" data-bn="কুরবানী প্যাকেজে অন্তর্ভুক্ত">Qurbani (Hady) included</span></li>
           </ul>
         </div>
         <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-          <button onclick="openPreRegModal('Economy Package')" class="bg-slate-100 hover:bg-emerald-600 hover:text-white text-slate-800 text-xs font-bold px-3.5 py-2 rounded-xl transition">Enquire / Book</button>
-          <a href="#" class="text-xs font-bold text-slate-600 hover:text-emerald-600">View Details →</a>
+          <button onclick="openPreRegModal('ইকোনমি প্যাকেজ')" class="bg-slate-100 hover:bg-emerald-600 hover:text-white text-slate-800 text-xs font-bold px-3.5 py-2 rounded-xl transition" data-en="Enquire / Book" data-bn="বুকিং আবেদন">Enquire / Book</button>
+          <a href="https://wa.me/8801711258708" target="_blank" class="text-xs font-bold text-slate-600 hover:text-emerald-600" data-en="Details →" data-bn="বিস্তারিত →">Details →</a>
         </div>
       </div>
 
       <!-- 3 -->
       <div class="bg-white rounded-3xl p-6 border-2 border-emerald-500 soft-shadow flex flex-col justify-between relative">
-        <div class="absolute -top-3 right-4 bg-emerald-500 text-white text-[9px] font-bold px-2.5 py-0.5 rounded-full uppercase">★ Popular</div>
+        <div class="absolute -top-3 right-4 bg-emerald-500 text-white text-[9px] font-bold px-2.5 py-0.5 rounded-full uppercase" data-en="★ Popular" data-bn="★ সেরা পছন্দ">★ Popular</div>
         <div>
-          <span class="bg-emerald-50 text-emerald-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Standard</span>
-          <h3 class="text-base font-bold text-slate-900 mt-3">Standard Package (Shifting)</h3>
-          <div class="text-xs text-slate-400 mb-2">35–40 Days</div>
-          <div class="text-xl font-extrabold text-emerald-600 mb-4">৳ ৭৫০,০০০</div>
+          <span class="bg-emerald-50 text-emerald-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase" data-en="Standard" data-bn="স্ট্যান্ডার্ড">Standard</span>
+          <h3 class="text-base font-bold text-slate-900 mt-3" data-en="Standard Package" data-bn="স্ট্যান্ডার্ড প্যাকেজ">Standard Package</h3>
+          <div class="text-xs text-slate-400 mb-2" data-en="35–40 Days" data-bn="৩৫–৪০ দিন">35–40 Days</div>
+          <div class="text-xl font-extrabold text-emerald-600 mb-4" data-en="৳ 6,40,000" data-bn="৳ ৬,৪০,০০০">৳ 6,40,000</div>
           <ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-4">
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span>Makkah hotel 450–700 m of Haram</span></li>
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span>Madinah Markaziyah 200–350 m</span></li>
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span>Shifting: Azizia → Makkah hotel</span></li>
+            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span data-en="Makkah hotel within 800m of Haram" data-bn="মক্কায় হারাম শরীফের ৮০০ মিটারের মধ্যে">Makkah hotel within 800m of Haram</span></li>
+            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span data-en="5-6 persons per room sharing" data-bn="প্রতি রুমে ৫-৬ জন শেয়ারিং">5-6 persons per room sharing</span></li>
+            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span data-en="Qurbani & Ziyarah included" data-bn="কুরবানী ও জিয়ারাহ অন্তর্ভুক্ত">Qurbani & Ziyarah included</span></li>
           </ul>
         </div>
         <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-          <button onclick="openPreRegModal('Standard Package')" class="teal-gradient-btn text-white text-xs font-bold px-3.5 py-2 rounded-xl transition">Enquire / Book</button>
-          <a href="#" class="text-xs font-bold text-slate-600 hover:text-emerald-600">View Details →</a>
+          <button onclick="openPreRegModal('স্ট্যান্ডার্ড প্যাকেজ')" class="teal-gradient-btn text-white text-xs font-bold px-3.5 py-2 rounded-xl transition" data-en="Enquire / Book" data-bn="বুকিং আবেদন">Enquire / Book</button>
+          <a href="https://wa.me/8801711258708" target="_blank" class="text-xs font-bold text-slate-600 hover:text-emerald-600" data-en="Details →" data-bn="বিস্তারিত →">Details →</a>
         </div>
       </div>
 
       <!-- 4 -->
       <div class="bg-white rounded-3xl p-6 border border-slate-200/80 soft-shadow flex flex-col justify-between hover:border-emerald-500 transition">
         <div>
-          <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Premium</span>
-          <h3 class="text-base font-bold text-slate-900 mt-3">Premium Package</h3>
-          <div class="text-xs text-slate-400 mb-2">35–40 Days</div>
-          <div class="text-xl font-extrabold text-emerald-600 mb-4">৳ ৯৭০,০০০</div>
+          <span class="bg-purple-50 text-purple-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase" data-en="VIP Short Stay" data-bn="ভিআইপি শর্ট প্যাকেজ">VIP Short Stay</span>
+          <h3 class="text-base font-bold text-slate-900 mt-3" data-en="VIP Luxury Package" data-bn="ভি. আই. পি প্যাকেজ">VIP Luxury Package</h3>
+          <div class="text-xs text-slate-400 mb-2" data-en="16–20 Days" data-bn="১৬–২০ দিন">16–20 Days</div>
+          <div class="text-xl font-extrabold text-emerald-600 mb-4" data-en="৳ 9,95,000" data-bn="৳ ৯,৯৫,০০০">৳ 9,95,000</div>
           <ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-4">
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span>Premium 4/5★ hotel near Haram</span></li>
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span>4/5★ Madinah Markaziyah</span></li>
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span>VIP tent (Category A) option</span></li>
+            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span data-en="5★ Clock Tower/Hilton & 4★ Madinah" data-bn="মক্কায় ৫★ (ক্লক টাওয়ার/হিলটন) ও ৪★ মদিনা">5★ Clock Tower/Hilton & 4★ Madinah</span></li>
+            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span data-en="Haramain Bullet Train Included" data-bn="হারামাইন এক্সপ্রেস বুলেট ট্রেন">Haramain Bullet Train Included</span></li>
+            <li class="flex items-start gap-1.5"><i class="fa-solid fa-circle-check text-emerald-500 mt-0.5"></i> <span data-en="VIP Tent at Mina & Arafat" data-bn="মিনা-আরাফায় ভিআইপি তাবু">VIP Tent at Mina & Arafat</span></li>
           </ul>
         </div>
         <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-          <button onclick="openPreRegModal('Premium Package')" class="bg-slate-100 hover:bg-emerald-600 hover:text-white text-slate-800 text-xs font-bold px-3.5 py-2 rounded-xl transition">Enquire / Book</button>
-          <a href="#" class="text-xs font-bold text-slate-600 hover:text-emerald-600">View Details →</a>
+          <button onclick="openPreRegModal('ভিআইপি প্যাকেজ')" class="bg-slate-100 hover:bg-emerald-600 hover:text-white text-slate-800 text-xs font-bold px-3.5 py-2 rounded-xl transition" data-en="Enquire / Book" data-bn="বুকিং আবেদন">Enquire / Book</button>
+          <a href="https://wa.me/8801711258708" target="_blank" class="text-xs font-bold text-slate-600 hover:text-emerald-600" data-en="Details →" data-bn="বিস্তারিত →">Details →</a>
         </div>
       </div>
     </div>
@@ -456,112 +477,112 @@
   <section id="umrah" class="py-20 bg-slate-50/60 border-t border-slate-200/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Umrah 2026–27</span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Umrah Packages</h2>
-        <p class="text-slate-500 text-sm mt-2">2026–2027 departures from Dhaka</p>
+        <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" data-en="Umrah 2026–27" data-bn="ওমরাহ ২০২৬–২৭">Umrah 2026–27</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3" data-en="Umrah Packages" data-bn="ওমরাহ প্যাকেজসমূহ">Umrah Packages</h2>
+        <p class="text-slate-500 text-sm mt-2" data-en="2026–2027 departures from Dhaka with weekly group departures" data-bn="২০২৬–২০২৭ সালে ঢাকা থেকে প্রতি সপ্তাহে নিয়মিত কাফেলা">2026–2027 departures from Dhaka with weekly group departures</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
         <div class="bg-white rounded-3xl p-6 border border-slate-200/80 soft-shadow flex flex-col justify-between">
           <div>
-            <span class="bg-emerald-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">★ Starting BDT 160,000</span>
-            <h3 class="text-base font-bold text-slate-900 mt-3">August 2026 Umrah</h3>
-            <div class="text-xs text-slate-400 mb-2">15 Days • 2026-2027</div>
-            <div class="text-xl font-extrabold text-emerald-600 mb-4">৳ ১৬০,০০০</div>
+            <span class="bg-emerald-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase" data-en="★ Starting BDT 160,000" data-bn="★ শুরু মাত্র ১৬০,০০০ ৳">★ Starting BDT 160,000</span>
+            <h3 class="text-base font-bold text-slate-900 mt-3" data-en="August 2026 Umrah" data-bn="আগস্ট ওমরাহ প্যাকেজ">August 2026 Umrah</h3>
+            <div class="text-xs text-slate-400 mb-2" data-en="15 Days • 2026-2027" data-bn="১৫ দিন • ২০২৬-২০২৭">15 Days • 2026-2027</div>
+            <div class="text-xl font-extrabold text-emerald-600 mb-4" data-en="৳ 160,000" data-bn="৳ ১৬০,০০০">৳ 160,000</div>
             <ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-4">
-              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Saudia Airlines direct flight</li>
-              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Makkah 400-600 m to Haram</li>
-              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Madinah quality hotel</li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> <span data-en="Saudia Airlines direct flight" data-bn="সৌদিয়া এয়ারলাইন্সে সরাসরি ফ্লাইট">Saudia Airlines direct flight</span></li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> <span data-en="Makkah 400-600 m to Haram" data-bn="মক্কায় ৪০০-৬০০ মিটারের মধ্যে হোটেল">Makkah 400-600 m to Haram</span></li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> <span data-en="Madinah quality hotel" data-bn="মদিনায় মারকাজিয়ায় হোটেল">Madinah quality hotel</span></li>
             </ul>
           </div>
-          <button onclick="openPreRegModal('August 2026 Umrah')" class="w-full mt-6 bg-brand-navy text-white text-xs font-bold py-2.5 rounded-xl hover:bg-emerald-600 transition">Enquire / Book</button>
+          <button onclick="openPreRegModal('August 2026 Umrah')" class="w-full mt-6 bg-brand-navy text-white text-xs font-bold py-2.5 rounded-xl hover:bg-emerald-600 transition" data-en="Enquire / Book" data-bn="বুকিং আবেদন">Enquire / Book</button>
         </div>
 
         <div class="bg-white rounded-3xl p-6 border border-slate-200/80 soft-shadow flex flex-col justify-between">
           <div>
-            <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Short</span>
-            <h3 class="text-base font-bold text-slate-900 mt-3">Umrah Express</h3>
-            <div class="text-xs text-slate-400 mb-2">10 nights</div>
-            <div class="text-xl font-extrabold text-emerald-600 mb-4">৳ ১৬৫,০০০</div>
+            <span class="bg-slate-100 text-slate-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase" data-en="Short" data-bn="শর্ট ট্রিপ">Short</span>
+            <h3 class="text-base font-bold text-slate-900 mt-3" data-en="Umrah Express" data-bn="ওমরাহ এক্সপ্রেস">Umrah Express</h3>
+            <div class="text-xs text-slate-400 mb-2" data-en="10 nights" data-bn="১০ রাত">10 nights</div>
+            <div class="text-xl font-extrabold text-emerald-600 mb-4" data-en="৳ 165,000" data-bn="৳ ১৬৫,০০০">৳ 165,000</div>
             <ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-4">
-              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> 3★ hotels in both cities</li>
-              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Economy direct flight</li>
-              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Full visa and transport</li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> <span data-en="3★ hotels in both cities" data-bn="উভয় শহরে ৩★ হোটেল">3★ hotels in both cities</span></li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> <span data-en="Economy direct flight" data-bn="ইকোনমি ডাইরেক্ট ফ্লাইট">Economy direct flight</span></li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> <span data-en="Full visa and transport" data-bn="সম্পূর্ণ ভিসা ও যাতায়াত">Full visa and transport</span></li>
             </ul>
           </div>
-          <button onclick="openPreRegModal('Umrah Express')" class="w-full mt-6 bg-brand-navy text-white text-xs font-bold py-2.5 rounded-xl hover:bg-emerald-600 transition">Enquire / Book</button>
+          <button onclick="openPreRegModal('Umrah Express')" class="w-full mt-6 bg-brand-navy text-white text-xs font-bold py-2.5 rounded-xl hover:bg-emerald-600 transition" data-en="Enquire / Book" data-bn="বুকিং আবেদন">Enquire / Book</button>
         </div>
 
         <div class="bg-white rounded-3xl p-6 border-2 border-emerald-500 soft-shadow flex flex-col justify-between relative">
-          <div class="absolute -top-3 right-4 bg-emerald-500 text-white text-[9px] font-bold px-2.5 py-0.5 rounded-full uppercase">★ Family</div>
+          <div class="absolute -top-3 right-4 bg-emerald-500 text-white text-[9px] font-bold px-2.5 py-0.5 rounded-full uppercase" data-en="★ Family" data-bn="★ ফ্যামিলি">★ Family</div>
           <div>
-            <span class="bg-emerald-50 text-emerald-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Comfort</span>
-            <h3 class="text-base font-bold text-slate-900 mt-3">Umrah Comfort</h3>
-            <div class="text-xs text-slate-400 mb-2">14 nights</div>
-            <div class="text-xl font-extrabold text-emerald-600 mb-4">৳ ২১৫,০০০</div>
+            <span class="bg-emerald-50 text-emerald-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase" data-en="Comfort" data-bn="কমফোর্ট">Comfort</span>
+            <h3 class="text-base font-bold text-slate-900 mt-3" data-en="Umrah Comfort" data-bn="ওমরাহ কমফোর্ট">Umrah Comfort</h3>
+            <div class="text-xs text-slate-400 mb-2" data-en="14 nights" data-bn="১৪ রাত">14 nights</div>
+            <div class="text-xl font-extrabold text-emerald-600 mb-4" data-en="৳ 215,000" data-bn="৳ ২১৫,০০০">৳ 215,000</div>
             <ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-4">
-              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> 4★ hotels walking to Haram</li>
-              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Daily breakfast & dinner</li>
-              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Taif tour included</li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> <span data-en="4★ hotels walking to Haram" data-bn="৪★ ওয়াকিং ডিসটেন্স হোটেল">4★ hotels walking to Haram</span></li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> <span data-en="Daily breakfast & dinner" data-bn="প্রতিদিন ব্রেকফাস্ট ও ডিনার">Daily breakfast & dinner</span></li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> <span data-en="Taif tour included" data-bn="তায়েফ ঐতিহাসিক সফর অন্তর্ভুক্ত">Taif tour included</span></li>
             </ul>
           </div>
-          <button onclick="openPreRegModal('Umrah Comfort')" class="w-full mt-6 teal-gradient-btn text-white text-xs font-bold py-2.5 rounded-xl transition">Enquire / Book</button>
+          <button onclick="openPreRegModal('Umrah Comfort')" class="w-full mt-6 teal-gradient-btn text-white text-xs font-bold py-2.5 rounded-xl transition" data-en="Enquire / Book" data-bn="বুকিং আবেদন">Enquire / Book</button>
         </div>
 
         <div class="bg-white rounded-3xl p-6 border border-slate-200/80 soft-shadow flex flex-col justify-between">
           <div>
-            <span class="bg-purple-50 text-purple-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Premium</span>
-            <h3 class="text-base font-bold text-slate-900 mt-3">Umrah Royal</h3>
-            <div class="text-xs text-slate-400 mb-2">15 nights</div>
-            <div class="text-xl font-extrabold text-emerald-600 mb-4">৳ ৩২৫,০০০</div>
+            <span class="bg-purple-50 text-purple-700 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase" data-en="Premium" data-bn="প্রিমিয়াম">Premium</span>
+            <h3 class="text-base font-bold text-slate-900 mt-3" data-en="Umrah Royal" data-bn="ওমরাহ রয়েল">Umrah Royal</h3>
+            <div class="text-xs text-slate-400 mb-2" data-en="15 nights" data-bn="১৫ রাত">15 nights</div>
+            <div class="text-xl font-extrabold text-emerald-600 mb-4" data-en="৳ 325,000" data-bn="৳ ৩২৫,০০০">৳ 325,000</div>
             <ul class="space-y-2 text-xs text-slate-600 border-t border-slate-100 pt-4">
-              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> 5★ Haram view hotels</li>
-              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Premium economy flights</li>
-              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> Private GMC service</li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> <span data-en="5★ Haram view hotels" data-bn="৫★ হারাম ভিউ লাক্সারি হোটেল">5★ Haram view hotels</span></li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> <span data-en="Premium flights & GMC car" data-bn="প্রিমিয়াম ফ্লাইট ও প্রাইভেট কার">Premium flights & GMC car</span></li>
+              <li><i class="fa-solid fa-check text-emerald-500 mr-1.5"></i> <span data-en="Private VIP services" data-bn="সম্পূর্ণ ভিআইপি সার্ভিস">Private VIP services</span></li>
             </ul>
           </div>
-          <button onclick="openPreRegModal('Umrah Royal')" class="w-full mt-6 bg-brand-navy text-white text-xs font-bold py-2.5 rounded-xl hover:bg-emerald-600 transition">Enquire / Book</button>
+          <button onclick="openPreRegModal('Umrah Royal')" class="w-full mt-6 bg-brand-navy text-white text-xs font-bold py-2.5 rounded-xl hover:bg-emerald-600 transition" data-en="Enquire / Book" data-bn="বুকিং আবেদন">Enquire / Book</button>
         </div>
       </div>
 
       <!-- Schedule Table -->
       <div class="bg-white rounded-2xl p-6 border border-slate-200 soft-shadow">
-        <h4 class="font-bold text-slate-900 text-sm mb-4">Upcoming Umrah Groups (2026–2027)</h4>
+        <h4 class="font-bold text-slate-900 text-sm mb-4" data-en="Upcoming Umrah Groups (2026–2027)" data-bn="আসন্ন ওমরাহ কাফেলার তারিখসমূহ (২০২৬–২০২৭)">Upcoming Umrah Groups (2026–2027)</h4>
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 text-center">
           <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
-            <div class="text-[10px] font-bold text-emerald-700 uppercase">SEPTEMBER</div>
+            <div class="text-[10px] font-bold text-emerald-700 uppercase" data-en="SEPTEMBER" data-bn="সেপ্টেম্বর">SEPTEMBER</div>
             <div class="text-[11px] font-semibold text-slate-800 mt-1">26/09/2026 TO 10/10/2026</div>
           </div>
           <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
-            <div class="text-[10px] font-bold text-emerald-700 uppercase">OCTOBER</div>
+            <div class="text-[10px] font-bold text-emerald-700 uppercase" data-en="OCTOBER" data-bn="অক্টোবর">OCTOBER</div>
             <div class="text-[11px] font-semibold text-slate-800 mt-1">10/10/2026 TO 24/10/2026</div>
           </div>
           <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
-            <div class="text-[10px] font-bold text-emerald-700 uppercase">NOVEMBER</div>
+            <div class="text-[10px] font-bold text-emerald-700 uppercase" data-en="NOVEMBER" data-bn="নভেম্বর">NOVEMBER</div>
             <div class="text-[11px] font-semibold text-slate-800 mt-1">21/11/2026 TO 05/12/2026</div>
           </div>
           <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
-            <div class="text-[10px] font-bold text-emerald-700 uppercase">DECEMBER (1)</div>
+            <div class="text-[10px] font-bold text-emerald-700 uppercase" data-en="DECEMBER" data-bn="ডিসেম্বর">DECEMBER</div>
             <div class="text-[11px] font-semibold text-slate-800 mt-1">12/12/2026 TO 26/12/2026</div>
           </div>
           <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
-            <div class="text-[10px] font-bold text-emerald-700 uppercase">JANUARY</div>
+            <div class="text-[10px] font-bold text-emerald-700 uppercase" data-en="JANUARY" data-bn="জানুয়ারি">JANUARY</div>
             <div class="text-[11px] font-semibold text-slate-800 mt-1">16/01/2027 TO 30/01/2027</div>
           </div>
           <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
-            <div class="text-[10px] font-bold text-emerald-700 uppercase">RAMADAN</div>
-            <div class="text-[11px] font-semibold text-slate-800 mt-1">06/02/2027 TO 20/02/2027</div>
+            <div class="text-[10px] font-bold text-emerald-700 uppercase" data-en="RAMADAN" data-bn="রমজান">RAMADAN</div>
+            <div class="text-[11px] font-semibold text-slate-800 mt-1" data-en="Special Departure" data-bn="বিশেষ রমজান কাফেলা">Special Departure</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 10. Why Families Choose Us (4 Cards) -->
+  <!-- 10. Why Families Choose Us -->
   <section id="features" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center max-w-3xl mx-auto mb-16">
-      <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Why Choose Us</span>
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Why families choose Broadway / MASK</h2>
+      <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" data-en="Why Choose Us" data-bn="আমাদের শ্রেষ্ঠত্ব">Why Choose Us</span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3" data-en="Why families choose MASK Hajj Group" data-bn="কেন হাজীগণ মাস্ক হজ গ্রুপকেই বেছে নেন?">Why families choose MASK Hajj Group</h2>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -569,29 +590,29 @@
         <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-teal-500 to-emerald-400 text-white flex items-center justify-center text-xl mb-4">
           <i class="fa-solid fa-hand-holding-heart"></i>
         </div>
-        <h3 class="font-bold text-slate-900 text-base mb-1">End-to-end Care</h3>
-        <p class="text-xs text-slate-500 leading-relaxed">Visa, flights, hotels, transport — all handled.</p>
+        <h3 class="font-bold text-slate-900 text-base mb-1" data-en="End-to-end Care" data-bn="পূর্ণাঙ্গ সেবা">End-to-end Care</h3>
+        <p class="text-xs text-slate-500 leading-relaxed" data-en="Visa, flights, hotels, transport — all handled." data-bn="ভিসা, বিমান টিকিট, হোটেল ও পরিবহন—সব দায়িত্ব আমাদের।">Visa, flights, hotels, transport — all handled.</p>
       </div>
       <div class="bg-white p-6 rounded-3xl border border-slate-100 soft-shadow">
         <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-teal-500 to-emerald-400 text-white flex items-center justify-center text-xl mb-4">
           <i class="fa-solid fa-book-open-reader"></i>
         </div>
-        <h3 class="font-bold text-slate-900 text-base mb-1">Pre-departure Training</h3>
-        <p class="text-xs text-slate-500 leading-relaxed">In-depth seminars on rituals & spirituality.</p>
+        <h3 class="font-bold text-slate-900 text-base mb-1" data-en="Pre-departure Training" data-bn="হজপূর্ব প্রশিক্ষণ">Pre-departure Training</h3>
+        <p class="text-xs text-slate-500 leading-relaxed" data-en="In-depth seminars on rituals & spirituality." data-bn="হজের নিয়মকানুন ও মাসায়েলের ওপর পূর্ণাঙ্গ কর্মশালা।">In-depth seminars on rituals & spirituality.</p>
       </div>
       <div class="bg-white p-6 rounded-3xl border border-slate-100 soft-shadow">
         <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-teal-500 to-emerald-400 text-white flex items-center justify-center text-xl mb-4">
           <i class="fa-solid fa-headset"></i>
         </div>
-        <h3 class="font-bold text-slate-900 text-base mb-1">On-ground Support</h3>
-        <p class="text-xs text-slate-500 leading-relaxed">Dedicated team in Makkah & Madinah 24/7.</p>
+        <h3 class="font-bold text-slate-900 text-base mb-1" data-en="On-ground Support" data-bn="সার্বক্ষণিক সাপোর্ট">On-ground Support</h3>
+        <p class="text-xs text-slate-500 leading-relaxed" data-en="Dedicated team in Makkah & Madinah 24/7." data-bn="মক্কা ও মদিনায় নিজস্ব টিম দ্বারা ২৪/৭ সহায়তা।">Dedicated team in Makkah & Madinah 24/7.</p>
       </div>
       <div class="bg-white p-6 rounded-3xl border border-slate-100 soft-shadow">
         <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-teal-500 to-emerald-400 text-white flex items-center justify-center text-xl mb-4">
           <i class="fa-solid fa-people-group"></i>
         </div>
-        <h3 class="font-bold text-slate-900 text-base mb-1">Family-like Community</h3>
-        <p class="text-xs text-slate-500 leading-relaxed">Travel as one united, caring group.</p>
+        <h3 class="font-bold text-slate-900 text-base mb-1" data-en="Family-like Community" data-bn="পারিবারিক বন্ধন">Family-like Community</h3>
+        <p class="text-xs text-slate-500 leading-relaxed" data-en="Travel as one united, caring group." data-bn="একটি পরিবারের মতো আন্তরিক পরিবেশে পবিত্র সফর সম্পন্ন করুন।">Travel as one united, caring group.</p>
       </div>
     </div>
   </section>
@@ -602,10 +623,10 @@
       
       <!-- Reviews Title -->
       <div class="text-center max-w-2xl mx-auto mb-14">
-        <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Reviews</span>
-        <h2 class="text-3xl font-extrabold text-slate-900 mt-2">What our pilgrims say</h2>
+        <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" data-en="Reviews" data-bn="হাজীদের মতামত">Reviews</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-2" data-en="What our pilgrims say" data-bn="আমাদের সম্মানিত হাজীদের অভিজ্ঞতা">What our pilgrims say</h2>
         <div class="flex items-center justify-center gap-1 text-amber-400 text-sm mt-2">
-          ★★★★★ <span class="text-slate-600 text-xs font-semibold ml-1">4.9 • based on Google reviews</span>
+          ★★★★★ <span class="text-slate-600 text-xs font-semibold ml-1" data-en="4.9 • based on Google reviews" data-bn="৪.৯ • গুগল রিভিউ ভিত্তিক">4.9 • based on Google reviews</span>
         </div>
       </div>
 
@@ -613,13 +634,15 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
         <div class="bg-white p-6 rounded-3xl border border-slate-100 soft-shadow">
           <i class="fa-solid fa-quote-left text-emerald-500 text-xl mb-3"></i>
-          <p class="text-xs text-slate-600 leading-relaxed mb-4">
+          <p class="text-xs text-slate-600 leading-relaxed mb-4"
+             data-en="Alhamdulillah! It has been a pleasure to do Hajj with the team. From spiritual motivation, training to tackling problems and keeping Hajis united — they deserve appreciation."
+             data-bn="আলহামদুলিল্লাহ! মাস্ক হজ গ্রুপের সাথে আমাদের হজ সফর ছিল অত্যন্ত প্রশান্তিদায়ক। শুরু থেকে শেষ পর্যন্ত প্রতিটি পদক্ষেপে বিজ্ঞ আলেমদের সঠিক সহায়তা পেয়েছি।">
             Alhamdulillah! It has been a pleasure to do Hajj with the team. From spiritual motivation, training to tackling problems and keeping Hajis united — they deserve appreciation.
           </p>
           <div class="flex justify-between items-center border-t border-slate-100 pt-3">
             <div>
               <div class="font-bold text-xs text-slate-900">Muhammad Aadil Bin Shaahid</div>
-              <div class="text-[10px] text-slate-400">11 months ago</div>
+              <div class="text-[10px] text-slate-400" data-en="Verified Pilgrim" data-bn="সম্মানিত হাজী">Verified Pilgrim</div>
             </div>
             <div class="text-amber-400 text-xs">★★★★★</div>
           </div>
@@ -627,13 +650,15 @@
 
         <div class="bg-white p-6 rounded-3xl border border-slate-100 soft-shadow">
           <i class="fa-solid fa-quote-left text-emerald-500 text-xl mb-3"></i>
-          <p class="text-xs text-slate-600 leading-relaxed mb-4">
+          <p class="text-xs text-slate-600 leading-relaxed mb-4"
+             data-en="I had the honor of going to Hajj with my parents. So well-organized and spiritually uplifting that my father who had performed Hajj twice before became a true admirer."
+             data-bn="বাবা-মাকে নিয়ে ওমরাহ পালন করেছিলাম। হোটেল আবাসন এবং খাবারের ব্যবস্থা ছিল চমৎকার। প্রবীণদের যেভাবে তারা যত্ন নিয়েছেন তা সত্যিই প্রশংসনীয়।">
             I had the honor of going to Hajj with my parents. So well-organized and spiritually uplifting that my father who had performed Hajj twice before became a true admirer.
           </p>
           <div class="flex justify-between items-center border-t border-slate-100 pt-3">
             <div>
               <div class="font-bold text-xs text-slate-900">Ananto Alam</div>
-              <div class="text-[10px] text-slate-400">11 months ago</div>
+              <div class="text-[10px] text-slate-400" data-en="Verified Pilgrim" data-bn="সম্মানিত হাজী">Verified Pilgrim</div>
             </div>
             <div class="text-amber-400 text-xs">★★★★★</div>
           </div>
@@ -644,13 +669,13 @@
       <div class="bg-white rounded-3xl border border-slate-200/80 soft-shadow overflow-hidden grid grid-cols-1 lg:grid-cols-12">
         <div class="lg:col-span-5 bg-gradient-to-br from-brand-navy to-[#07192d] p-8 sm:p-10 text-white flex flex-col justify-between">
           <div>
-            <h3 class="text-2xl font-extrabold mb-3">Book a Consultation or Join Next Training</h3>
-            <p class="text-slate-300 text-xs leading-relaxed mb-8">Speak directly with our advisors. No commitment, just clarity.</p>
+            <h3 class="text-2xl font-extrabold mb-3" data-en="Book a Consultation or Join Next Training" data-bn="পরামর্শ বুক করুন অথবা পরবর্তী কর্মশালায় অংশ নিন">Book a Consultation or Join Next Training</h3>
+            <p class="text-slate-300 text-xs leading-relaxed mb-8" data-en="Speak directly with our advisors. No commitment, just clarity." data-bn="সরাসরি আমাদের বিশেষজ্ঞদের সাথে কথা বলুন এবং আপনার পবিত্র সফরের পরিকল্পনা করুন।">Speak directly with our advisors. No commitment, just clarity.</p>
             
             <div class="space-y-4 text-xs text-slate-300">
               <p class="flex items-start gap-3">
                 <i class="fa-solid fa-location-dot text-emerald-400 mt-1"></i>
-                <span>67/1 Naya Paltan, China Town (East Tower), [20th floor] Suite-21/2, Dhaka-1000</span>
+                <span data-en="67/1 Naya Paltan, China Town (East Tower), [20th floor] Suite-21/2, Dhaka-1000" data-bn="৬৭/১ নয়া পল্টন, চায়না টাউন (ইস্ট টাওয়ার), ২০ তলা, সুইট ২১/২, ঢাকা-১০০০">67/1 Naya Paltan, China Town (East Tower), [20th floor] Suite-21/2, Dhaka-1000</span>
               </p>
               <p class="flex items-center gap-3">
                 <i class="fa-solid fa-phone text-emerald-400"></i>
@@ -662,7 +687,7 @@
               </p>
               <p class="flex items-center gap-3">
                 <i class="fa-solid fa-clock text-emerald-400"></i>
-                <span>10 AM – 7 PM (Daily)</span>
+                <span data-en="10 AM – 7 PM (Daily)" data-bn="সকাল ১০টা – সন্ধ্যা ৭টা (প্রতিদিন)">10 AM – 7 PM (Daily)</span>
               </p>
             </div>
           </div>
@@ -670,15 +695,15 @@
           <div class="grid grid-cols-3 gap-3 pt-8 border-t border-slate-800 mt-8 text-center">
             <div>
               <div class="font-extrabold text-lg text-white">1200+</div>
-              <div class="text-[10px] text-slate-400">Hajis</div>
+              <div class="text-[10px] text-slate-400" data-en="Hajis" data-bn="হাজী">Hajis</div>
             </div>
             <div>
               <div class="font-extrabold text-lg text-white">11+</div>
-              <div class="text-[10px] text-slate-400">Years</div>
+              <div class="text-[10px] text-slate-400" data-en="Years" data-bn="বছর">Years</div>
             </div>
             <div>
               <div class="font-extrabold text-lg text-amber-400">4.9★</div>
-              <div class="text-[10px] text-slate-400">Rated</div>
+              <div class="text-[10px] text-slate-400" data-en="Rated" data-bn="রেটিং">Rated</div>
             </div>
           </div>
         </div>
@@ -686,30 +711,30 @@
         <div class="lg:col-span-7 p-8 sm:p-10">
           <form onsubmit="handleFormSubmit(event)" class="space-y-4">
             <div>
-              <label class="block text-xs font-semibold text-slate-700 mb-1">Full name</label>
-              <input type="text" required placeholder="Full Name" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-900 focus:ring-2 focus:ring-emerald-500 outline-none">
+              <label class="block text-xs font-semibold text-slate-700 mb-1" data-en="Full name" data-bn="আপনার পুরো নাম">Full name</label>
+              <input type="text" required placeholder="Abdullah Rahman" data-en-ph="Abdullah Rahman" data-bn-ph="আপনার নাম লিখুন" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-900 focus:ring-2 focus:ring-emerald-500 outline-none">
             </div>
             <div>
-              <label class="block text-xs font-semibold text-slate-700 mb-1">Phone (BD)</label>
+              <label class="block text-xs font-semibold text-slate-700 mb-1" data-en="Phone (BD)" data-bn="মোবাইল নম্বর">Phone (BD)</label>
               <input type="tel" required placeholder="01XXX-XXXXXX" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-900 focus:ring-2 focus:ring-emerald-500 outline-none">
             </div>
             <div>
-              <label class="block text-xs font-semibold text-slate-700 mb-1">I'm interested in</label>
+              <label class="block text-xs font-semibold text-slate-700 mb-1" data-en="I'm interested in" data-bn="যে বিষয়ে আগ্রহী">I'm interested in</label>
               <select class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-900 focus:ring-2 focus:ring-emerald-500 outline-none">
-                <option>Haj 2027 (Pre-Register)</option>
-                <option>Weekly Umrah Package</option>
-                <option>VIP / Custom Package</option>
+                <option data-en="Hajj 2026–2027 (Pre-Register)" data-bn="হজ ২০২৬–২০২৭ (প্রাক-নিবন্ধন)">Hajj 2026–2027 (Pre-Register)</option>
+                <option data-en="Weekly Umrah Package" data-bn="সাপ্তাহিক ওমরাহ প্যাকেজ">Weekly Umrah Package</option>
+                <option data-en="VIP / Custom Package" data-bn="ভিআইপি / কাস্টমাইজড প্যাকেজ">VIP / Custom Package</option>
               </select>
             </div>
             <div>
-              <label class="block text-xs font-semibold text-slate-700 mb-1">Message</label>
-              <textarea rows="3" placeholder="How can we help?" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-900 focus:ring-2 focus:ring-emerald-500 outline-none"></textarea>
+              <label class="block text-xs font-semibold text-slate-700 mb-1" data-en="Message" data-bn="বার্তা / মন্তব্য">Message</label>
+              <textarea rows="3" placeholder="How can we help?" data-en-ph="How can we help?" data-bn-ph="কীভাবে আপনাকে সাহায্য করতে পারি?" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-2.5 text-xs text-slate-900 focus:ring-2 focus:ring-emerald-500 outline-none"></textarea>
             </div>
             <button type="submit" class="w-full teal-gradient-btn text-white text-xs font-bold py-3 rounded-xl shadow-md transition flex items-center justify-center gap-2">
-              <span>Request Callback</span>
+              <span data-en="Request Callback" data-bn="কলব্যাক অনুরোধ পাঠান">Request Callback</span>
               <i class="fa-solid fa-arrow-right text-xs"></i>
             </button>
-            <p class="text-[10px] text-center text-slate-400">We respect your privacy. No spam — just a friendly call.</p>
+            <p class="text-[10px] text-center text-slate-400" data-en="We respect your privacy. No spam — just a friendly call." data-bn="আপনার তথ্যের সর্বোচ্চ গোপনীয়তা রক্ষা করা হবে।">We respect your privacy. No spam — just a friendly call.</p>
           </form>
         </div>
       </div>
@@ -719,134 +744,143 @@
   <!-- 12. FAQ Section -->
   <section id="faq" class="py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-12">
-      <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">FAQ</span>
-      <h2 class="text-3xl font-extrabold text-slate-900 mt-2">Common questions, answered</h2>
+      <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" data-en="FAQ" data-bn="প্রশ্নোত্তর">FAQ</span>
+      <h2 class="text-3xl font-extrabold text-slate-900 mt-2" data-en="Common questions, answered" data-bn="সাধারণ জিজ্ঞাসা ও উত্তরসমূহ">Common questions, answered</h2>
     </div>
 
     <div class="space-y-4">
       <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden soft-shadow">
         <button onclick="toggleFaq('faq1')" class="w-full text-left p-5 flex justify-between items-center font-bold text-slate-800 text-sm">
-          <span>What's included in the Hajj package?</span>
+          <span data-en="What's included in the Hajj package?" data-bn="হজ প্যাকেজে কী কী সেবা অন্তর্ভুক্ত থাকে?">What's included in the Hajj package?</span>
           <i id="faqIcon-faq1" class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
         </button>
-        <div id="faq1" class="hidden p-5 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-50">
+        <div id="faq1" class="hidden p-5 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-50"
+             data-en="All packages include return airfare, hotel accommodations in Makkah and Madinah, three daily meals, Mina & Arafat tents, local transport, visa processing, guides, luggage and pre-departure orientation."
+             data-bn="সকল প্যাকেজে বিমান টিকিট, মক্কা ও মদিনার আবাসন, ৩ বেলা খাবার, মিনা-আরাফার তাবু, পরিবহন, ভিসা প্রসেসিং, গাইড বই, ট্রাভেল লাগেজ ও হজপূর্ব প্রশিক্ষণ অন্তর্ভুক্ত।">
           All packages include return airfare, hotel accommodations in Makkah and Madinah, three daily meals, Mina & Arafat tents, local transport, visa processing, guides, luggage and pre-departure orientation.
         </div>
       </div>
       <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden soft-shadow">
         <button onclick="toggleFaq('faq2')" class="w-full text-left p-5 flex justify-between items-center font-bold text-slate-800 text-sm">
-          <span>How early should I book?</span>
+          <span data-en="How early should I book?" data-bn="কত আগে প্রাক-নিবন্ধন করা প্রয়োজন?">How early should I book?</span>
           <i id="faqIcon-faq2" class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
         </button>
-        <div id="faq2" class="hidden p-5 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-50">
+        <div id="faq2" class="hidden p-5 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-50"
+             data-en="Due to government quotas and limited airline allocations, we recommend pre-registering as early as possible to secure your desired package tier."
+             data-bn="সরকারি কোটা ও সময়সীমার কারণে দ্রুততম সময়ে প্রাক-নিবন্ধন সম্পন্ন করে আপনার কাঙ্ক্ষিত প্যাকেজ নিশ্চিত করার পরামর্শ দেওয়া হয়।">
           Due to government quotas and limited airline allocations, we recommend pre-registering as early as possible to secure your desired package tier.
         </div>
       </div>
       <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden soft-shadow">
         <button onclick="toggleFaq('faq3')" class="w-full text-left p-5 flex justify-between items-center font-bold text-slate-800 text-sm">
-          <span>Is pre-departure training included?</span>
+          <span data-en="Is pre-departure training included?" data-bn="হজ প্রশিক্ষণ কি সম্পূর্ণ ফ্রি?">Is pre-departure training included?</span>
           <i id="faqIcon-faq3" class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
         </button>
-        <div id="faq3" class="hidden p-5 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-50">
+        <div id="faq3" class="hidden p-5 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-50"
+             data-en="Yes, comprehensive day-long training sessions led by our scholars, along with guide books and digital videos, are fully complimentary for all registered pilgrims."
+             data-bn="হ্যাঁ, বিজ্ঞ আলেমদের মাধ্যমে আয়োজিত বিশেষ প্রশিক্ষণ কর্মশালা এবং প্রয়োজনীয় গাইড বই সকল নিবন্ধিত হাজির জন্য সম্পূর্ণ বিনামূল্যে প্রদান করা হয়।">
           Yes, comprehensive day-long training sessions led by our scholars, along with guide books and digital videos, are fully complimentary for all registered pilgrims.
         </div>
       </div>
       <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden soft-shadow">
         <button onclick="toggleFaq('faq4')" class="w-full text-left p-5 flex justify-between items-center font-bold text-slate-800 text-sm">
-          <span>Can I customize my package?</span>
+          <span data-en="Can I customize my package?" data-bn="প্যাকেজ কাস্টমাইজ বা পরিবর্তন করা যাবে কি?">Can I customize my package?</span>
           <i id="faqIcon-faq4" class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform"></i>
         </button>
-        <div id="faq4" class="hidden p-5 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-50">
+        <div id="faq4" class="hidden p-5 pt-0 text-xs text-slate-600 leading-relaxed border-t border-slate-50"
+             data-en="Yes, custom 2-bed/3-bed and private VIP arrangements can be tailored upon direct discussion with our advisors."
+             data-bn="অবশ্যই! পরিবার বা বিশেষ চাহিদার ক্ষেত্রে ২-বেড/৩-বেড কিংবা ভিআইপি প্রাইভেট প্যাকেজ আলোচনা সাপেক্ষে তৈরি করা যায়।">
           Yes, custom 2-bed/3-bed and private VIP arrangements can be tailored upon direct discussion with our advisors.
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 13. Blog / Guidance & Stories (New Section from Screenshot) -->
+  <!-- 13. Blog Section -->
   <section id="blog" class="py-20 bg-slate-50/60 border-t border-slate-200/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-12 gap-4">
         <div>
-          <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">From the Blog</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Guidance & Stories</h2>
+          <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider" data-en="From the Blog" data-bn="ব্লগ ও দিকনির্দেশনা">From the Blog</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3" data-en="Guidance & Stories" data-bn="পবিত্র সফরের সহীহ গাইডলাইন">Guidance & Stories</h2>
         </div>
         <a href="#blog" class="text-xs font-bold text-slate-700 bg-white border border-slate-200 hover:border-emerald-500 px-4 py-2.5 rounded-xl transition flex items-center gap-1.5 shadow-sm">
-          <span>All articles</span>
+          <span data-en="All articles" data-bn="সকল আর্টিকেল">All articles</span>
           <i class="fa-solid fa-arrow-right text-[10px]"></i>
         </a>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Blog 1 -->
         <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/80 soft-shadow hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
           <div>
             <div class="h-48 bg-gradient-to-tr from-slate-800 to-slate-900 relative flex items-center justify-center text-white">
               <i class="fa-solid fa-kaaba text-5xl opacity-40"></i>
-              <span class="absolute top-4 left-4 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full">Umrah Guide</span>
+              <span class="absolute top-4 left-4 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full" data-en="Umrah Guide" data-bn="ওমরাহ গাইড">Umrah Guide</span>
             </div>
             <div class="p-6">
-              <div class="text-[11px] text-slate-400 font-semibold mb-2">Umrah Guide • May 12, 2026</div>
-              <h3 class="font-bold text-slate-900 text-base leading-snug hover:text-emerald-600 transition">
+              <div class="text-[11px] text-slate-400 font-semibold mb-2">May 12, 2026</div>
+              <h3 class="font-bold text-slate-900 text-base leading-snug hover:text-emerald-600 transition"
+                  data-en="10 New Umrah Rules You Must Follow in 2026 — Updated Saudi Guidelines"
+                  data-bn="২০২৬ সালের ওমরাহ পালনে নতুন ১০টি নিয়ম ও সৌদি সরকারের হালনাগাদ গাইডলাইন">
                 10 New Umrah Rules You Must Follow in 2026 — Updated Saudi Guidelines
               </h3>
             </div>
           </div>
           <div class="p-6 pt-0">
-            <a href="#blog" class="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center gap-1">Read more →</a>
+            <a href="#blog" class="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center gap-1" data-en="Read more →" data-bn="বিস্তারিত পড়ুন →">Read more →</a>
           </div>
         </div>
 
-        <!-- Blog 2 -->
         <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/80 soft-shadow hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
           <div>
             <div class="h-48 bg-gradient-to-tr from-teal-800 to-slate-900 relative flex items-center justify-center text-white">
               <i class="fa-solid fa-faucet-water text-5xl opacity-40"></i>
-              <span class="absolute top-4 left-4 bg-teal-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full">Spirituality</span>
+              <span class="absolute top-4 left-4 bg-teal-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full" data-en="Spirituality" data-bn="আধ্যাত্মিকতা">Spirituality</span>
             </div>
             <div class="p-6">
-              <div class="text-[11px] text-slate-400 font-semibold mb-2">Spirituality • Apr 30, 2026</div>
-              <h3 class="font-bold text-slate-900 text-base leading-snug hover:text-emerald-600 transition">
+              <div class="text-[11px] text-slate-400 font-semibold mb-2">Apr 30, 2026</div>
+              <h3 class="font-bold text-slate-900 text-base leading-snug hover:text-emerald-600 transition"
+                  data-en="Zamzam Water Drinking Rules and Etiquette: A Complete Sunnah Guide"
+                  data-bn="জমজমের পানি পানের সুন্নতি নিয়ম ও দোয়া: একটি পূর্ণাঙ্গ দিকনির্দেশনা">
                 Zamzam Water Drinking Rules and Etiquette: A Complete Sunnah Guide
               </h3>
             </div>
           </div>
           <div class="p-6 pt-0">
-            <a href="#blog" class="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center gap-1">Read more →</a>
+            <a href="#blog" class="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center gap-1" data-en="Read more →" data-bn="বিস্তারিত পড়ুন →">Read more →</a>
           </div>
         </div>
 
-        <!-- Blog 3 -->
         <div class="bg-white rounded-3xl overflow-hidden border border-slate-200/80 soft-shadow hover:-translate-y-1 transition duration-300 flex flex-col justify-between">
           <div>
             <div class="h-48 bg-gradient-to-tr from-amber-700 to-slate-900 relative flex items-center justify-center text-white">
               <i class="fa-solid fa-mountain text-5xl opacity-40"></i>
-              <span class="absolute top-4 left-4 bg-amber-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full">Hajj Guide</span>
+              <span class="absolute top-4 left-4 bg-amber-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full" data-en="Hajj Guide" data-bn="হজ গাইড">Hajj Guide</span>
             </div>
             <div class="p-6">
-              <div class="text-[11px] text-slate-400 font-semibold mb-2">Hajj Guide • Mar 18, 2026</div>
-              <h3 class="font-bold text-slate-900 text-base leading-snug hover:text-emerald-600 transition">
+              <div class="text-[11px] text-slate-400 font-semibold mb-2">Mar 18, 2026</div>
+              <h3 class="font-bold text-slate-900 text-base leading-snug hover:text-emerald-600 transition"
+                  data-en="Day of Arafat: Importance, Meaning, Fasting and Profound Spiritual Benefits"
+                  data-bn="আরাফার দিনের গুরুত্ব, ফজিলত এবং আত্মিক তাৎপর্য">
                 Day of Arafat: Importance, Meaning, Fasting and Profound Spiritual Benefits
               </h3>
             </div>
           </div>
           <div class="p-6 pt-0">
-            <a href="#blog" class="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center gap-1">Read more →</a>
+            <a href="#blog" class="text-xs font-bold text-emerald-600 hover:text-emerald-700 flex items-center gap-1" data-en="Read more →" data-bn="বিস্তারিত পড়ুন →">Read more →</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 14. Pre-Footer Callout & Map Section (From Screenshot) -->
+  <!-- 14. Pre-Footer Callout & Map Section -->
   <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-      
-      <!-- Ready to begin callout card -->
       <div class="lg:col-span-6 cta-gradient-box rounded-3xl p-8 sm:p-12 text-white flex flex-col justify-between shadow-xl">
         <div>
-          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-3">Ready to begin your journey?</h2>
-          <p class="text-slate-100 text-sm">Talk to a Broadway / MASK advisor today.</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-3" data-en="Ready to begin your journey?" data-bn="আপনার পবিত্র সফর শুরু করতে প্রস্তুত?">Ready to begin your journey?</h2>
+          <p class="text-slate-100 text-sm" data-en="Talk to a MASK Hajj advisor today." data-bn="আজই মাস্ক হজ গ্রুপের অভিজ্ঞ উপদেষ্টার সাথে সরাসরি কথা বলুন।">Talk to a MASK Hajj advisor today.</p>
         </div>
         <div class="flex flex-wrap gap-4 mt-8">
           <a href="tel:+8801711258708" class="bg-white text-slate-900 hover:bg-slate-100 font-bold text-xs px-5 py-3 rounded-xl shadow transition flex items-center gap-2">
@@ -855,41 +889,36 @@
           </a>
           <a href="https://wa.me/8801711258708" target="_blank" class="bg-white/20 hover:bg-white/30 text-white font-bold text-xs px-5 py-3 rounded-xl transition flex items-center gap-2 backdrop-blur-sm">
             <i class="fa-brands fa-whatsapp text-white"></i>
-            <span>Chat on WhatsApp</span>
+            <span data-en="Chat on WhatsApp" data-bn="হোয়াটসঅ্যাপে বার্তা দিন">Chat on WhatsApp</span>
           </a>
         </div>
       </div>
 
-      <!-- Find Us on the Map card -->
       <div class="lg:col-span-6 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 soft-shadow flex flex-col justify-between">
         <div>
           <div class="flex justify-between items-start mb-2">
-            <h3 class="text-base font-bold text-slate-900">Find Us on the Map</h3>
+            <h3 class="text-base font-bold text-slate-900" data-en="Find Us on the Map" data-bn="আমাদের অফিসের অবস্থান">Find Us on the Map</h3>
             <a href="https://maps.google.com" target="_blank" class="text-xs font-bold text-emerald-600 hover:underline flex items-center gap-1">
-              <span>Open in Maps</span>
+              <span data-en="Open in Maps" data-bn="ম্যাপে দেখুন">Open in Maps</span>
               <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
             </a>
           </div>
-          <p class="text-xs text-slate-500 mb-4">67/1 Naya Paltan, China Town (East Tower), [20th floor] Suite-21/2, Dhaka-1000</p>
+          <p class="text-xs text-slate-500 mb-4" data-en="67/1 Naya Paltan, China Town (East Tower), [20th floor] Suite-21/2, Dhaka-1000" data-bn="৬৭/১ নয়া পল্টন, চায়না টাউন (ইস্ট টাওয়ার), ২০ তলা, সুইট ২১/২, ঢাকা-১০০০">67/1 Naya Paltan, China Town (East Tower), [20th floor] Suite-21/2, Dhaka-1000</p>
         </div>
-        <!-- Styled Map Placeholder -->
         <div class="h-44 bg-slate-100 rounded-2xl border border-slate-200 relative overflow-hidden flex items-center justify-center text-center p-4">
           <div class="space-y-1">
             <i class="fa-solid fa-location-dot text-3xl text-rose-500 animate-bounce"></i>
-            <div class="text-xs font-bold text-slate-800">MASK Hajj Group Head Office</div>
-            <div class="text-[10px] text-slate-500">Naya Paltan, Dhaka-1000</div>
+            <div class="text-xs font-bold text-slate-800" data-en="MASK Hajj Group Head Office" data-bn="মাস্ক হজ গ্রুপ প্রধান কার্যালয়">MASK Hajj Group Head Office</div>
+            <div class="text-[10px] text-slate-500" data-en="Naya Paltan, Dhaka-1000" data-bn="নয়া পল্টন, ঢাকা-১০০০">Naya Paltan, Dhaka-1000</div>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- 15. Complete 4-Column Clean Footer (From Screenshot) -->
+  <!-- 15. Complete 4-Column Clean Footer -->
   <footer id="contact" class="bg-white pt-16 pb-12 border-t border-slate-200/70 text-xs text-slate-500">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
-      
-      <!-- Col 1: Brand & Social -->
       <div>
         <a href="#" class="flex items-center gap-2 mb-3">
           <div class="w-8 h-8 bg-brand-navy rounded-lg flex items-center justify-center text-white text-sm">
@@ -899,7 +928,7 @@
             MASK<span class="text-brand-teal ml-0.5">HAJJ</span>
           </div>
         </a>
-        <p class="leading-relaxed mb-5 text-slate-500">
+        <p class="leading-relaxed mb-5 text-slate-500" data-en="Your trusted partner for Hajj & Umrah from Bangladesh to the Holy Cities." data-bn="বাংলাদেশ থেকে পবিত্র মক্কা-মদিনায় আপনার বিশ্বস্ত হজ ও ওমরাহ সহযোগী।">
           Your trusted partner for Hajj & Umrah from Bangladesh to the Holy Cities.
         </p>
         <div class="flex items-center gap-3 text-slate-600">
@@ -909,26 +938,24 @@
         </div>
       </div>
 
-      <!-- Col 2: Quick Links -->
       <div>
-        <h4 class="font-bold text-slate-900 text-sm mb-4">Quick Links</h4>
+        <h4 class="font-bold text-slate-900 text-sm mb-4" data-en="Quick Links" data-bn="কুইক লিংকস">Quick Links</h4>
         <ul class="space-y-2.5 font-medium">
-          <li><a href="#about" class="hover:text-emerald-600 transition">About</a></li>
-          <li><a href="#packages" class="hover:text-emerald-600 transition">Hajj Packages</a></li>
-          <li><a href="#umrah" class="hover:text-emerald-600 transition">Umrah Packages</a></li>
-          <li><a href="#gallery" class="hover:text-emerald-600 transition">Gallery</a></li>
-          <li><a href="#blog" class="hover:text-emerald-600 transition">Blog</a></li>
-          <li><a href="#contact" class="hover:text-emerald-600 transition">Contact</a></li>
+          <li><a href="#about" class="hover:text-emerald-600 transition" data-en="About Us" data-bn="আমাদের পরিচিতি">About Us</a></li>
+          <li><a href="#packages" class="hover:text-emerald-600 transition" data-en="Hajj Packages" data-bn="হজ প্যাকেজসমূহ">Hajj Packages</a></li>
+          <li><a href="#umrah" class="hover:text-emerald-600 transition" data-en="Umrah Packages" data-bn="ওমরাহ প্যাকেজসমূহ">Umrah Packages</a></li>
+          <li><a href="#gallery" class="hover:text-emerald-600 transition" data-en="Gallery" data-bn="গ্যালারি">Gallery</a></li>
+          <li><a href="#blog" class="hover:text-emerald-600 transition" data-en="Blog" data-bn="ব্লগ">Blog</a></li>
+          <li><a href="#contact" class="hover:text-emerald-600 transition" data-en="Contact" data-bn="যোগাযোগ">Contact</a></li>
         </ul>
       </div>
 
-      <!-- Col 3: Contact Details -->
       <div>
-        <h4 class="font-bold text-slate-900 text-sm mb-4">Contact</h4>
+        <h4 class="font-bold text-slate-900 text-sm mb-4" data-en="Contact Details" data-bn="যোগাযোগের ঠিকানা">Contact Details</h4>
         <div class="space-y-2.5">
           <p class="flex items-start gap-2">
             <i class="fa-solid fa-location-dot text-emerald-600 mt-0.5"></i>
-            <span>67/1 Naya Paltan, China Town (East Tower), [20th floor] Suite-21/2, Dhaka-1000</span>
+            <span data-en="67/1 Naya Paltan, China Town (East Tower), [20th floor] Suite-21/2, Dhaka-1000" data-bn="৬৭/১ নয়া পল্টন, চায়না টাউন (ইস্ট টাওয়ার), ২০ তলা, সুইট ২১/২, ঢাকা-১০০০">67/1 Naya Paltan, China Town (East Tower), [20th floor] Suite-21/2, Dhaka-1000</span>
           </p>
           <p class="flex items-center gap-2">
             <i class="fa-solid fa-phone text-emerald-600"></i>
@@ -940,32 +967,30 @@
           </p>
           <p class="flex items-center gap-2">
             <i class="fa-solid fa-clock text-emerald-600"></i>
-            <span>10 AM – 7 PM</span>
+            <span data-en="10 AM – 7 PM" data-bn="সকাল ১০টা – সন্ধ্যা ৭টা">10 AM – 7 PM</span>
           </p>
         </div>
       </div>
 
-      <!-- Col 4: Certifications -->
       <div>
-        <h4 class="font-bold text-slate-900 text-sm mb-4">Certifications</h4>
+        <h4 class="font-bold text-slate-900 text-sm mb-4" data-en="Certifications" data-bn="স্বীকৃতি ও লাইসেন্স">Certifications</h4>
         <ul class="space-y-2 text-[11px] leading-relaxed text-slate-600 font-medium">
-          <li>• Licence No. 0709</li>
-          <li>• Ministry of Religious Affairs, GoB</li>
-          <li>• HAAB Member</li>
-          <li>• ATAB Member</li>
-          <li>• Rawaf Mina for Pilgrims Services</li>
-          <li>• Ministry of Hajj & Umrah (KSA)</li>
-          <li>• Al Bait Guests (ضيوف البيت)</li>
+          <li>• <span data-en="Licence No. 0709" data-bn="লাইসেন্স নং ০৭০৯">Licence No. 0709</span></li>
+          <li>• <span data-en="Ministry of Religious Affairs, GoB" data-bn="ধর্ম বিষয়ক মন্ত্রণালয়, বাংলাদেশ">Ministry of Religious Affairs, GoB</span></li>
+          <li>• <span data-en="HAAB Member" data-bn="হাব (HAAB) সদস্য">HAAB Member</span></li>
+          <li>• <span data-en="ATAB Member" data-bn="আটাব (ATAB) সদস্য">ATAB Member</span></li>
+          <li>• <span data-en="Rawaf Mina for Pilgrims Services" data-bn="রাওয়াফ মিনা অনুমোদিত">Rawaf Mina for Pilgrims Services</span></li>
+          <li>• <span data-en="Ministry of Hajj & Umrah (KSA)" data-bn="সৌদি হজ ও ওমরাহ মন্ত্রণালয়">Ministry of Hajj & Umrah (KSA)</span></li>
+          <li>• <span data-en="Al Bait Guests (ضيوف البيت)" data-bn="আল বাইত গেস্টস (ضيوف البيت)">Al Bait Guests (ضيوف البيت)</span></li>
         </ul>
       </div>
     </div>
 
-    <!-- Bottom Copyright -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-slate-100 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px]">
-      <div>© 2026 MASK Hajj Group / Broadway Tours & Travels Ltd. All rights reserved.</div>
+      <div>© 2026 MASK Hajj Group. All rights reserved.</div>
       <div class="flex items-center gap-4 font-semibold text-slate-600">
-        <a href="#" class="hover:underline">Privacy</a>
-        <a href="#" class="hover:underline">Terms</a>
+        <a href="#" class="hover:underline" data-en="Privacy Policy" data-bn="প্রাইভেসি পলিসি">Privacy Policy</a>
+        <a href="#" class="hover:underline" data-en="Terms of Service" data-bn="শর্তাবলী">Terms of Service</a>
       </div>
     </div>
   </footer>
@@ -975,29 +1000,29 @@
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
-  <!-- Pre-Register Popup Modal -->
+  <!-- Pre-Register Modal -->
   <div id="preRegModal" class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden items-center justify-center z-50 p-4">
     <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl relative">
       <button onclick="closeModal('preRegModal')" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 text-lg">
         <i class="fa-solid fa-xmark"></i>
       </button>
-      <h3 class="text-xl font-extrabold text-slate-900">Pre-Register for Hajj 2027</h3>
-      <p class="text-xs text-slate-500 mt-1 mb-6">Limited seats for 2027. Get priority pricing and a free consultation.</p>
+      <h3 class="text-xl font-extrabold text-slate-900" data-en="Pre-Register for Hajj 2026–27" data-bn="হজ ২০২৬–২৭ প্রাক-নিবন্ধন">Pre-Register for Hajj 2026–27</h3>
+      <p class="text-xs text-slate-500 mt-1 mb-6" data-en="Limited seats available. Get priority pricing and a free consultation." data-bn="সীমিত আসন সংখ্যা। এখনই প্রাক-নিবন্ধন করে অগ্রাধিকার পান।">Limited seats available. Get priority pricing and a free consultation.</p>
 
       <form onsubmit="handlePreRegSubmit(event)" class="space-y-4">
-        <input type="text" id="preRegName" required placeholder="Abdullah Rahman" class="w-full border border-slate-200 rounded-xl px-4 py-3 text-xs text-slate-900 focus:ring-2 focus:ring-emerald-500 outline-none">
+        <input type="text" id="preRegName" required placeholder="Abdullah Rahman" data-en-ph="Abdullah Rahman" data-bn-ph="আপনার পুরো নাম" class="w-full border border-slate-200 rounded-xl px-4 py-3 text-xs text-slate-900 focus:ring-2 focus:ring-emerald-500 outline-none">
         <input type="tel" id="preRegPhone" required placeholder="01XXX-XXXXXX" class="w-full border border-slate-200 rounded-xl px-4 py-3 text-xs text-slate-900 focus:ring-2 focus:ring-emerald-500 outline-none">
         <select id="preRegPackage" class="w-full border border-slate-200 rounded-xl px-4 py-3 text-xs text-slate-900 focus:ring-2 focus:ring-emerald-500 outline-none">
-          <option>Hajj 2027 (Pre-Register)</option>
-          <option>Azizia Short Package (৳ ৬২০,০০০)</option>
-          <option>Economy Package (৳ ৬৫০,০০০)</option>
-          <option>Standard Package (৳ ৭৫০,০০০)</option>
-          <option>Premium Package (৳ ৯৭০,০০০)</option>
+          <option>Hajj 2026–2027 (Pre-Register)</option>
+          <option>সাশ্রয়ী ফুল প্যাকেজ (৳ ৫,১৩,৬৪৮)</option>
+          <option>ইকোনমি প্যাকেজ (৳ ৫,৪০,০০০)</option>
+          <option>স্ট্যান্ডার্ড প্যাকেজ (৳ ৬,৪০,০০০)</option>
+          <option>ভি. আই. পি প্যাকেজ (৳ ৯,৯৫,০০০)</option>
         </select>
         <button type="submit" class="w-full teal-gradient-btn text-white text-xs font-bold py-3.5 rounded-xl shadow transition">
-          Pre-Register Now
+          <span data-en="Pre-Register Now" data-bn="প্রাক-নিবন্ধন জমা দিন">Pre-Register Now</span>
         </button>
-        <button type="button" onclick="closeModal('preRegModal')" class="w-full text-xs text-slate-400 hover:text-slate-600 font-semibold mt-2">
+        <button type="button" onclick="closeModal('preRegModal')" class="w-full text-xs text-slate-400 hover:text-slate-600 font-semibold mt-2" data-en="Maybe later" data-bn="পরে করব">
           Maybe later
         </button>
       </form>
@@ -1010,7 +1035,7 @@
       <button onclick="closeModal('loginModal')" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700">
         <i class="fa-solid fa-xmark"></i>
       </button>
-      <h3 class="text-base font-bold text-slate-900 mb-1"><i class="fa-solid fa-lock text-emerald-600 mr-2"></i>অ্যাক্সেস প্যানেল</h3>
+      <h3 class="text-base font-bold text-slate-900 mb-1"><i class="fa-solid fa-lock text-emerald-600 mr-2"></i>লগইন প্যানেল</h3>
       <p class="text-xs text-slate-500 mb-4">পিন কোড দিন (admin123 বা staff123):</p>
       <input type="password" id="pinInput" placeholder="PIN Code" class="w-full border border-slate-200 rounded-xl px-4 py-2.5 text-xs mb-4 focus:ring-2 focus:ring-emerald-500 outline-none">
       <button onclick="handleLogin()" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-2.5 rounded-xl text-xs transition">লগইন</button>
@@ -1029,6 +1054,46 @@
 
   <!-- Interactive JavaScript Logic -->
   <script>
+    let currentLanguage = 'en';
+
+    function toggleLanguage() {
+      currentLanguage = currentLanguage === 'en' ? 'bn' : 'en';
+      
+      // Update text nodes
+      document.querySelectorAll('[data-en]').forEach(el => {
+        const text = el.getAttribute(`data-${currentLanguage}`);
+        if (text) {
+          el.innerHTML = text;
+        }
+      });
+
+      // Update placeholders
+      document.querySelectorAll('[data-en-ph]').forEach(el => {
+        const ph = el.getAttribute(`data-${currentLanguage}-ph`);
+        if (ph) {
+          el.placeholder = ph;
+        }
+      });
+
+      // Update toggle button text
+      const btn = document.getElementById('langToggleBtn');
+      if (btn) {
+        btn.innerHTML = currentLanguage === 'en' 
+          ? '<i class="fa-solid fa-globe"></i> বাংলা' 
+          : '<i class="fa-solid fa-globe"></i> English';
+      }
+
+      localStorage.setItem('mask_lang', currentLanguage);
+    }
+
+    // Auto-load preferred language
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('mask_lang');
+      if (savedLang && savedLang !== currentLanguage) {
+        toggleLanguage();
+      }
+    });
+
     function openPreRegModal(packageName = null) {
       if (packageName) {
         document.getElementById('preRegPackage').value = packageName;
